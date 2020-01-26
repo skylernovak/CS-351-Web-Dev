@@ -12,3 +12,10 @@
 ![img2.png](images/img2.png)
 
 ## Question 2
+
+## (b)
+![img3.png](images/img3.png)
+![img4.png](images/img4.png)
+
+## (c)
+![img5.png](images/img5.png)
