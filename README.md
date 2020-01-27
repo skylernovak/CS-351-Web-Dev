@@ -3,42 +3,57 @@
 **NetID: ix9753**
 
 ## Question 1
-## (a)
+
+### (a)
 
 ![img1.png](images/img1.png)
 
-## (b)
+### (b)
 
 ![img2.png](images/img2.png)
 
 ## Question 2
 
-## (b)
+### (b)
 ![img3.png](images/img3.png)
 ![img4.png](images/img4.png)
 
-## (c)
+### (c)
 ![img5.png](images/img5.png)
 
 ## Question 3
 
 ## Question 4
 
-## (a)
+### (a)
 
 1. C++
 2. Java
 3. Python
 
-## (b)
+### (b)
 
 + Windows 10
 + Linux Ubuntu
 + Macintosh
 
-## (c)
+### (c)
 
 + Code Blocks
 + Visual Studios
 + Eclipse
 + Intellij IDEA
+
+## Question 5
+
+### (a)
+
+Sample of `Java` code:
+```Java
+		File file = new File("02PlInv.txt");
+		if(!file.exists()) {
+			System.out.println("Input file does not exist!");
+			return;
+		} 
+		Scanner inputFile = new Scanner(file);
+```
