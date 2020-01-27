@@ -19,3 +19,26 @@
 
 ## (c)
 ![img5.png](images/img5.png)
+
+## Question 3
+
+## Question 4
+
+## (a)
+
+1. C++
+2. Java
+3. Python
+
+## (b)
+
++ Windows 10
++ Linux Ubuntu
++ Macintosh
+
+## (c)
+
++ Code Blocks
++ Visual Studios
++ Eclipse
++ Intellij IDEA
