@@ -57,3 +57,15 @@ Sample of `Java` code:
 		} 
 		Scanner inputFile = new Scanner(file);
 ```
+
+### (b)
+
+For my programming tool, I have selected VS Code. It is a fast, lightweight code editor with heavyweight funtionality. It has the following features:
++ IntelliSense - intelligent code completetion that learns from you and your code
++ Built in debugging - no more print line debugging!
++ Built in Git - compare diffs, stage files, commit, push, pull all from right in VS Code
++ Extensible - many extensions! If it doesn't come with the language you want, get the extension!
+
+You can get VS Code [here].
+
+[here]: https://code.visualstudio.com
