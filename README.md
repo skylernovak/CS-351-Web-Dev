@@ -18,12 +18,18 @@ The following lists show the different HTML tags and attributes used in the abov
 
 ### Tags
 +`<nav></nav>`
+
 +`<a></a>`
+
 +`<img>`
 
 ### Attributes
 +`class`
+
 +`href`
+
 +`alt`
+
 +`src`
+
 +`style`
