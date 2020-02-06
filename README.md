@@ -116,3 +116,20 @@ a.navbar-brand img {
 `article figcaption` and `a.navbar-brand img` are both descendant cominator selectors. any element that belongs to both an article and figcaption
 will be set to font size 18 pixels, and aligned in the center. For any element that is an anchor of class navbar-brand and is an image with have the 
 property values listed assigned to it. 
+
+# Question 2
+
+## (b)
+
+According to the HTML5 specification should you: 
+(i) Put site wide navigation into the <main> element? 
+(ii) Should you put common banners (e.g., site logo) in the <main> element? 
+(iii) Should you put copyright notices in the <main> element?
+
+The answer to all three above questions is no. The main element is designed for the main content of the body element that makes the page unique. 
+site wide navigation is better suited at the top or to the side of the page. As well as banners. These are usually found in the header element. Cpyright notices are typically found in the footer element. 
+
+List the file names of your pages here.
++ index.html
++ about.html
++ activities.html
