@@ -2,13 +2,28 @@
 **Skyler Novak**
 **NetID: ix9753**
 
-## Question 1
+# Question 1
+
 ## (a)
 
-![2020-01-25.png](images/2020-01-25.png)
+```
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+  <a class="navbar-brand d-none d-md-block" href="#">
+    <img alt="Grotto Networking" src="/images/sideLogo.png" style="width: 150px">
+  </a>
+</nav>
+```
 
-## (b)
+The following lists show the different HTML tags and attributes used in the above example
 
-![2020-01-25 (2).png](images/2020-01-25 (2).png)
+### Tags
++`<nav></nav>`
++`<a></a>`
++`<img>`
 
-## Question 2
+### Attributes
++`class`
++`href`
++`alt`
++`src`
++`style`
