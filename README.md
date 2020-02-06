@@ -1,4 +1,4 @@
-# Homework #1 Solution
+# Homework #2 Solution
 **Skyler Novak**
 **NetID: ix9753**
 
