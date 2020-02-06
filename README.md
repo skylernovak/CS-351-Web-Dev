@@ -149,3 +149,34 @@ The header element should be located inside the body element, but should preceed
 ## (e)
 
 ![directory screenshot](\Images\hw2-1.png)
+
+## (f)
+
+```
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8">
+        <title>Activities - GSFB</title>
+    </head>
+    <body>
+        <header>
+            <h1>Activities</h1>
+        </header>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="active"><a href="About.html">About</a></li class="active">
+                <li class="active"><a href="Activities.html">Activities</a></li class="active">
+            </ul>
+        </nav>
+        <main>
+            <h1>2020 Draft</h1>
+            <p>The 2020 season online snake draft is tentativly set for Sunday, March 22nd, at Noon PST</p>
+        </main>
+        <footer>
+            &copy 2020 Skyler Novak
+        </footer>
+    </body>
+</html>
+```
