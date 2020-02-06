@@ -149,4 +149,5 @@ The header element should be located inside the body element, but should preceed
 ## (e)
 
 ![directory screenshot][scrst1]
+
 [scrst1]: C:\Users\skylernovak\Documents\dev\CS351\HW1\assignment-skylernovak\clubProject\Images\hw2-1.png
