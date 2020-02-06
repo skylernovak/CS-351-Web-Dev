@@ -65,15 +65,28 @@ body {
 }
 ```
 
+### Selector & Type
+
 `body` is a simple type selector
+
 `#RelatedItems` is a simple id selector
+
 `.graphDrawing` is a simple class selector
 
+### Property & Value
+
 `padding-bottom` is a property with the value of `50px`
+
 `max-height` is a property with the value of `50vh`
+
 `overflow-y` is a property with the value of `auto`
+
 `border` is a property with the value of `dashed thin #808080`
+
 `border-radius` is a property with the value of `5px`
+
 `width` is a property with the value of `90%`
+
 `margin` is a property with the value of `0`
+
 `margin-bottom` is a property with the value of `25px`
