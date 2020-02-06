@@ -17,19 +17,13 @@
 The following lists show the different HTML tags and attributes used in the above example
 
 ### Tags
-+`<nav></nav>`
-
-+`<a></a>`
-
-+`<img>`
++ `<nav></nav>`
++ `<a></a>`
++ `<img>`
 
 ### Attributes
-+`class`
-
-+`href`
-
-+`alt`
-
-+`src`
-
-+`style`
++ `class`
++ `href`
++ `alt`
++ `src`
++ `style`
