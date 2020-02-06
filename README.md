@@ -43,3 +43,37 @@ Why or why wouldn’t this be helpful for styling?
 Using headers as an example, for the 2nd h3 in each section, you may want to distinguish it from other h3's, so you would make a class
 and then are able to target those specific h3's. If there was a singular h3 near the top of the document you want to further distinguish
 by changing the style further, you can give that h3 an id and target it specifically from the other h3 headers.
+
+## (c)
+
+```
+body {
+  padding-bottom: 50px;
+}
+
+#RelatedItems {
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.graphDrawing {
+  border: dashed thin #808080;
+  border-radius: 5px;
+  width: 90%;
+  margin: 0;
+  margin-bottom: 25px;
+}
+```
+
+`body` is a simple type selector
+`#RelatedItems` is a simple id selector
+`.graphDrawing` is a simple class selector
+
+`padding-bottom` is a property with the value of `50px`
+`max-height` is a property with the value of `50vh`
+`overflow-y` is a property with the value of `auto`
+`border` is a property with the value of `dashed thin #808080`
+`border-radius` is a property with the value of `5px`
+`width` is a property with the value of `90%`
+`margin` is a property with the value of `0`
+`margin-bottom` is a property with the value of `25px`
