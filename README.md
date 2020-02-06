@@ -145,3 +145,7 @@ The header element should be located inside the body element, but should preceed
 *What about as the last item in the <body>?* Yes, it is usually found as the last element in the body.
 
 *Would you prefer one over the other? Why?* I would prefer to use it as the last element in body, as footer is usually designed to hold copyright information, and other links and info not typically needed on a daily basis. 
+
+## (e)
+
+![directory screenshot](../Images/hw2-1.png)
