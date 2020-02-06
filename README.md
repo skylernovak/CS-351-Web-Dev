@@ -137,3 +137,11 @@ List the file names of your pages here.
 ## (c)
 
 The header element should be located inside the body element, but should preceed the main element. The header element is used as an introductory section to the page while the main element will hold most of the content unique to that page. 
+
+## (d)
+
+*Is it okay to put the <footer> in <main>?* No it is not. It should be included in the body after main.
+
+*What about as the last item in the <body>?* Yes, it is usually found as the last element in the body.
+
+*Would you prefer one over the other? Why?* I would prefer to use it as the last element in body, as footer is usually designed to hold copyright information, and other links and info not typically needed on a daily basis. 
