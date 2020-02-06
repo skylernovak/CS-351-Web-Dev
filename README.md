@@ -210,3 +210,19 @@ The header element should be located inside the body element, but should preceed
 5. `parseFloat('YourNameHere2112');`
 
    This returns NaN. I presume for similar reasons that parseInt returns NaN when the first two characters do not conform to specifications. 
+
+## (b)
+
+![directory screenshot](clubProject/Images/hw2-3.png)
+
+1. Use toFixed to get a string of the first 5 digits of pi
+
+   3.14159
+
+2. (ii) Use toPrecision to get h (planck's constant) to 3 sig figs
+
+   6.63e-34
+
+3. (iii) Use toFixed to get the mpg to a tenth of a gallon
+
+   29.1
