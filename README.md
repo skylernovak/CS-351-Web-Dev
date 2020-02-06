@@ -148,4 +148,4 @@ The header element should be located inside the body element, but should preceed
 
 ## (e)
 
-![directory screenshot](Images\hw2-1.png)
+![directory screenshot](\Images\hw2-1.png)
