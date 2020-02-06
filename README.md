@@ -187,26 +187,26 @@ The header element should be located inside the body element, but should preceed
 
 ![directory screenshot](clubProject/images/hw2-2.png)
 
-1. parseInt('hello'); // (i) Why? and What is a NaN?
+1. `parseInt('hello'); // (i) Why? and What is a NaN?`
 
    NaN means Not-a-Number. This is returned from parseInt when the value sent to it does not contain an int
 
-2. parseInt('12hello'); // (ii)
+2. `parseInt('12hello'); // (ii)`
 
    This returns the number 12, which is the first two int characters of the string.
 
-3. parseInt('1010', 2);  // (iii) What does this do?
+3. `parseInt('1010', 2);  // (iii) What does this do?`
 
    This returns the decimal value of '1010' using radix 2. Binary to Decimal. the value is 10.
 
-4. parseInt('hi5'); // (iii) Is this the same as (ii)
+4. `parseInt('hi5'); // (iii) Is this the same as (ii)`
 
    This returns NaN because the first two characters of the string are not a numerical character, or '0x', in which case it would be interpretted as hex.
 
-5. parseFloat('3.145YourNameHere');
+5. `parseFloat('3.145YourNameHere');`
 
    this returns the value 3.145, the floating point number at the start of the string
 
-5. parseFloat('YourNameHere2112'); // Put in your name!
+5. `parseFloat('YourNameHere2112');`
 
    This returns NaN. I presume for similar reasons that parseInt returns NaN when the first two characters do not conform to specifications. 
