@@ -133,3 +133,7 @@ List the file names of your pages here.
 + index.html
 + about.html
 + activities.html
+
+## (c)
+
+The header element should be located inside the body element, but should preceed the main element. The header element is used as an introductory section to the page while the main element will hold most of the content unique to that page. 
