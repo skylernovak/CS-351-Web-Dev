@@ -185,7 +185,7 @@ The header element should be located inside the body element, but should preceed
 
 ## (a)
 
-![directory screenshot](clubProject/images/hw2-2.png)
+![directory screenshot](clubProject/Images/hw2-2.png)
 
 1. `parseInt('hello'); // (i) Why? and What is a NaN?`
 
