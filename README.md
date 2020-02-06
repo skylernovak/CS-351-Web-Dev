@@ -148,7 +148,7 @@ The header element should be located inside the body element, but should preceed
 
 ## (e)
 
-![directory screenshot](images\hw2-1.png)
+![directory screenshot](clubProject\images\hw2-1.png)
 
 ## (f)
 
