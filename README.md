@@ -90,3 +90,29 @@ body {
 `margin` is a property with the value of `0`
 
 `margin-bottom` is a property with the value of `25px`
+
+## (d)
+
+```
+article figcaption {
+  font-size: 18px;
+  text-align: center;
+}
+
+a.navbar-brand img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+  margin-right: 10px;
+  padding: 3px;
+  border-right-color: #D4D4D4;
+  border-right-style: solid;
+  border-right-width: 1px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+}
+```
+
+`article figcaption` and `a.navbar-brand img` are both descendant cominator selectors. any element that belongs to both an article and figcaption
+will be set to font size 18 pixels, and aligned in the center. For any element that is an anchor of class navbar-brand and is an image with have the 
+property values listed assigned to it. 
