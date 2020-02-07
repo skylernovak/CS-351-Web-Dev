@@ -33,3 +33,8 @@ nav {
 ul .active{
     background-color: aliceblue;
 }
+
+footer {
+    text-align: center;
+    font-size: small;
+}

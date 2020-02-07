@@ -303,3 +303,7 @@ seperator that was specified and uses it to seperate each element of the array a
 ## (c)
 
 ![directory screenshot](clubProject/Images/hw2-11.png)
+
+## (d)
+
+![directory screenshot](clubProject/Images/hw2-12.png)
