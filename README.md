@@ -226,3 +226,15 @@ The header element should be located inside the body element, but should preceed
 3. (iii) Use toFixed to get the mpg to a tenth of a gallon
 
    29.1
+
+   ## (c)
+
+   ![directory screenshot](clubProject/Images/hw2-4.png)
+
+1. using two string deliminators gives us flexibility on how to use them. For example, perhaps a work has a single quote mark in it. deliminating the line with double quotes will avoid this issue. 
+
+2. (i) this does not work. It throws an undefined error. 
+
+3. (ii) this does not work, because the single quote mark escapes the string, and the rest of the string is not accepted as input. 
+
+4. (iii) using `\'` allows us to not escape the string, and capture it in it's entireity. 
