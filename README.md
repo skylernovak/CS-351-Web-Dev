@@ -295,3 +295,7 @@ seperator that was specified and uses it to seperate each element of the array a
 ## (a)
 
 ![directory screenshot](clubProject/Images/hw2-9.png)
+
+## (b)
+
+![directory screenshot](clubProject/Images/hw2-10.png)
