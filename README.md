@@ -271,3 +271,21 @@ seperator that was specified and uses it to seperate each element of the array a
 (vi) pop removes the last element in the array
 
 ![directory screenshot](clubProject/Images/hw2-7.png)
+
+## (b)
+
+(i) The first function takes a string argument and converts it to upper case
+
+(ii) map keeps track of the insertion order of elements into an object. it has both a key and value for every element. 
+
+(iii) the function noCaseSort essentially takes two strings and determines which comes first alphabetically. 
+
+(iv) When passing the function there, it will sort the array alphabetically
+
+## (c)
+
+(i) with the bracket notation, the property is free to not adhere to JavaScript string syntax. This is very useful during runtime. 
+
+(ii) yes, you can put an array in an object
+
+![directory screenshot](clubProject/Images/hw2-8.png)
