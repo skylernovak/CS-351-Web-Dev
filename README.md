@@ -238,3 +238,13 @@ The header element should be located inside the body element, but should preceed
 3. (ii) this does not work, because the single quote mark escapes the string, and the rest of the string is not accepted as input. 
 
 4. (iii) using `\'` allows us to not escape the string, and capture it in it's entireity. 
+
+## (d)
+
+(i) toUpperCase() converts name to all uppercase letters
+
+(ii) toLowerCase() converts name to all lowercase letters
+
+(iii) includes() searches the string and returns true/false if the string contains the string passed to the includes function.
+
+![directory screenshot](clubProject/Images/hw2-5.png)
