@@ -248,3 +248,7 @@ The header element should be located inside the body element, but should preceed
 (iii) includes() searches the string and returns true/false if the string contains the string passed to the includes function.
 
 ![directory screenshot](clubProject/Images/hw2-5.png)
+
+## (e)
+
+![directory screenshot](clubProject/Images/hw2-6.png)
