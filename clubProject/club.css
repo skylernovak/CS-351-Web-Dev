@@ -24,6 +24,12 @@ nav {
     background-color: lightsteelblue;
     margin: 5px;
     padding: 5px;
-    max-width: 20em;
+    max-width: 10em;
     border: chocolate solid 5px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+ul .active{
+    background-color: aliceblue;
 }
