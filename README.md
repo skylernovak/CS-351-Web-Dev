@@ -289,3 +289,9 @@ seperator that was specified and uses it to seperate each element of the array a
 (ii) yes, you can put an array in an object
 
 ![directory screenshot](clubProject/Images/hw2-8.png)
+
+# Question 5
+
+## (a)
+
+![directory screenshot](clubProject/Images/hw2-9.png)
