@@ -252,3 +252,22 @@ The header element should be located inside the body element, but should preceed
 ## (e)
 
 ![directory screenshot](clubProject/Images/hw2-6.png)
+
+# Question 4
+
+## (a)
+
+(i) This splits the sentence, using spaces as a deliminator, and puts each partition into an array
+
+(ii) The push calls append the element used as its argument to the array at the end. The length call returns the length of the array. 
+
+(iii) join takes the array and turns it into a string. it takes the 
+seperator that was specified and uses it to seperate each element of the array as it creates the string. 
+
+(iv) indexOf returns the array index value of the argument. in this case, it is 7. 
+
+(v) yes, you changed galaxy to college
+
+(vi) pop removes the last element in the array
+
+![directory screenshot](clubProject/Images/hw2-7.png)
