@@ -1,309 +1,36 @@
-# Homework #2 Solution
+# Homework #3 Solution
 **Skyler Novak**
+
 **NetID: ix9753**
 
 # Question 1
 
 ## (a)
 
-```
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
-  <a class="navbar-brand d-none d-md-block" href="#">
-    <img alt="Grotto Networking" src="/images/sideLogo.png" style="width: 150px">
-  </a>
-</nav>
-```
+I included images on the following pages:
++ index.html
++ about.html
 
-The following lists show the different HTML tags and attributes used in the above example
+Here is a screenshot of the image on the homepage
 
-### Tags
-+ `<nav></nav>`
-+ `<a></a>`
-+ `<img>`
-
-### Attributes
-+ `class`
-+ `href`
-+ `alt`
-+ `src`
-+ `style`
+![screenshot](clubProject/images/scrnsht-1.png)
 
 ## (b)
 
-Can you use the same id attribute on more than one element in an HTML document? 
-No, you can not do that. It must be unique to a single element.
+I added the following emoji's:
++ baseballs flanking the footer `&#x26be`
++ a trophy next to the league champion history `&#x1f3c6`
 
-Does the fact that we use id attributes as targets for links within a page influence this? 
-Yes. the id attribute is meant to be unique to avoid confusion when targeting it.
-
-Can you use the same class on multiple elements in a document? 
-Yes, you can. If you want to target a singular element, an id is appropriate. If you want to target a few elements, a class is more suitable. 
-
-Why or why wouldn’t this be helpful for styling?
-Using headers as an example, for the 2nd h3 in each section, you may want to distinguish it from other h3's, so you would make a class
-and then are able to target those specific h3's. If there was a singular h3 near the top of the document you want to further distinguish
-by changing the style further, you can give that h3 an id and target it specifically from the other h3 headers.
-
-## (c)
-
-```
-body {
-  padding-bottom: 50px;
-}
-
-#RelatedItems {
-  max-height: 50vh;
-  overflow-y: auto;
-}
-
-.graphDrawing {
-  border: dashed thin #808080;
-  border-radius: 5px;
-  width: 90%;
-  margin: 0;
-  margin-bottom: 25px;
-}
-```
-
-### Selector & Type
-
-`body` is a simple type selector
-
-`#RelatedItems` is a simple id selector
-
-`.graphDrawing` is a simple class selector
-
-### Property & Value
-
-`padding-bottom` is a property with the value of `50px`
-
-`max-height` is a property with the value of `50vh`
-
-`overflow-y` is a property with the value of `auto`
-
-`border` is a property with the value of `dashed thin #808080`
-
-`border-radius` is a property with the value of `5px`
-
-`width` is a property with the value of `90%`
-
-`margin` is a property with the value of `0`
-
-`margin-bottom` is a property with the value of `25px`
-
-## (d)
-
-```
-article figcaption {
-  font-size: 18px;
-  text-align: center;
-}
-
-a.navbar-brand img {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background-color: white;
-  margin-right: 10px;
-  padding: 3px;
-  border-right-color: #D4D4D4;
-  border-right-style: solid;
-  border-right-width: 1px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
-}
-```
-
-`article figcaption` and `a.navbar-brand img` are both descendant cominator selectors. any element that belongs to both an article and figcaption
-will be set to font size 18 pixels, and aligned in the center. For any element that is an anchor of class navbar-brand and is an image with have the 
-property values listed assigned to it. 
+as seen here:
+![screenshot 2](clubProject/images/scrnsht-2.png)
 
 # Question 2
 
-## (b)
-
-According to the HTML5 specification should you: 
-(i) Put site wide navigation into the <main> element? 
-(ii) Should you put common banners (e.g., site logo) in the <main> element? 
-(iii) Should you put copyright notices in the <main> element?
-
-The answer to all three above questions is no. The main element is designed for the main content of the body element that makes the page unique. 
-site wide navigation is better suited at the top or to the side of the page. As well as banners. These are usually found in the header element. Cpyright notices are typically found in the footer element. 
-
-List the file names of your pages here.
-+ index.html
-+ about.html
-+ activities.html
-
-## (c)
-
-The header element should be located inside the body element, but should preceed the main element. The header element is used as an introductory section to the page while the main element will hold most of the content unique to that page. 
-
-## (d)
-
-*Is it okay to put the <footer> in <main>?* No it is not. It should be included in the body after main.
-
-*What about as the last item in the <body>?* Yes, it is usually found as the last element in the body.
-
-*Would you prefer one over the other? Why?* I would prefer to use it as the last element in body, as footer is usually designed to hold copyright information, and other links and info not typically needed on a daily basis. 
-
-## (e)
-
-![directory screenshot](clubProject/Images/hw2-1.png)
-
-## (f)
-
-```
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-		<meta charset="utf-8">
-        <title>Activities - GSFB</title>
-    </head>
-    <body>
-        <header>
-            <h1>Activities</h1>
-        </header>
-        <nav>
-            <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li class="active"><a href="About.html">About</a></li class="active">
-                <li class="active"><a href="Activities.html">Activities</a></li class="active">
-            </ul>
-        </nav>
-        <main>
-            <h1>2020 Draft</h1>
-            <p>The 2020 season online snake draft is tentativly set for Sunday, March 22nd, at Noon PST</p>
-        </main>
-        <footer>
-            &copy 2020 Skyler Novak
-        </footer>
-    </body>
-</html>
-```
-
-# Question 3
-
 ## (a)
 
-![directory screenshot](clubProject/Images/hw2-2.png)
-
-1. `parseInt('hello'); // (i) Why? and What is a NaN?`
-
-   NaN means Not-a-Number. This is returned from parseInt when the value sent to it does not contain an int
-
-2. `parseInt('12hello'); // (ii)`
-
-   This returns the number 12, which is the first two int characters of the string.
-
-3. `parseInt('1010', 2);  // (iii) What does this do?`
-
-   This returns the decimal value of '1010' using radix 2. Binary to Decimal. the value is 10.
-
-4. `parseInt('hi5'); // (iii) Is this the same as (ii)`
-
-   This returns NaN because the first two characters of the string are not a numerical character, or '0x', in which case it would be interpretted as hex.
-
-5. `parseFloat('3.145YourNameHere');`
-
-   this returns the value 3.145, the floating point number at the start of the string
-
-5. `parseFloat('YourNameHere2112');`
-
-   This returns NaN. I presume for similar reasons that parseInt returns NaN when the first two characters do not conform to specifications. 
+![screenshot 3](clubProject/images/scrnsht-3.png)
 
 ## (b)
 
-![directory screenshot](clubProject/Images/hw2-3.png)
+http://csweb01.csueastbay.edu/~ix9753/clubProject/index.html
 
-1. Use toFixed to get a string of the first 5 digits of pi
-
-   3.14159
-
-2. (ii) Use toPrecision to get h (planck's constant) to 3 sig figs
-
-   6.63e-34
-
-3. (iii) Use toFixed to get the mpg to a tenth of a gallon
-
-   29.1
-
-   ## (c)
-
-   ![directory screenshot](clubProject/Images/hw2-4.png)
-
-1. using two string deliminators gives us flexibility on how to use them. For example, perhaps a work has a single quote mark in it. deliminating the line with double quotes will avoid this issue. 
-
-2. (i) this does not work. It throws an undefined error. 
-
-3. (ii) this does not work, because the single quote mark escapes the string, and the rest of the string is not accepted as input. 
-
-4. (iii) using `\'` allows us to not escape the string, and capture it in it's entireity. 
-
-## (d)
-
-(i) toUpperCase() converts name to all uppercase letters
-
-(ii) toLowerCase() converts name to all lowercase letters
-
-(iii) includes() searches the string and returns true/false if the string contains the string passed to the includes function.
-
-![directory screenshot](clubProject/Images/hw2-5.png)
-
-## (e)
-
-![directory screenshot](clubProject/Images/hw2-6.png)
-
-# Question 4
-
-## (a)
-
-(i) This splits the sentence, using spaces as a deliminator, and puts each partition into an array
-
-(ii) The push calls append the element used as its argument to the array at the end. The length call returns the length of the array. 
-
-(iii) join takes the array and turns it into a string. it takes the 
-seperator that was specified and uses it to seperate each element of the array as it creates the string. 
-
-(iv) indexOf returns the array index value of the argument. in this case, it is 7. 
-
-(v) yes, you changed galaxy to college
-
-(vi) pop removes the last element in the array
-
-![directory screenshot](clubProject/Images/hw2-7.png)
-
-## (b)
-
-(i) The first function takes a string argument and converts it to upper case
-
-(ii) map keeps track of the insertion order of elements into an object. it has both a key and value for every element. 
-
-(iii) the function noCaseSort essentially takes two strings and determines which comes first alphabetically. 
-
-(iv) When passing the function there, it will sort the array alphabetically
-
-## (c)
-
-(i) with the bracket notation, the property is free to not adhere to JavaScript string syntax. This is very useful during runtime. 
-
-(ii) yes, you can put an array in an object
-
-![directory screenshot](clubProject/Images/hw2-8.png)
-
-# Question 5
-
-## (a)
-
-![directory screenshot](clubProject/Images/hw2-9.png)
-
-## (b)
-
-![directory screenshot](clubProject/Images/hw2-10.png)
-
-## (c)
-
-![directory screenshot](clubProject/Images/hw2-11.png)
-
-## (d)
-
-![directory screenshot](clubProject/Images/hw2-12.png)
