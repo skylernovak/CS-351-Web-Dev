@@ -34,3 +34,22 @@ as seen here:
 
 http://csweb01.csueastbay.edu/~ix9753/clubProject/index.html
 
+# Question 3
+
+## (a)
+
+```javascript
+document.title = "CS 351 - ix9753";
+document.getElementById("Author").innerHTML = "Skyler Novak";
+```
+
+## (b)
+
+```javascript
+document.getElementById("Number").innerHTML = "The " + states.length + " States";
+let initialValue = 0;
+var total2 = states.reduce(function (accu, curr) {
+    return accu + curr.population
+}, initialValue);
+document.getElementById("TotalPop").innerHTML = "Total U.S. population: " + total2;
+```

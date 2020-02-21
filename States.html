@@ -60,6 +60,89 @@
         stateTableName();
         stateTableCapital();
         */
+
+        // Question 3
+
+        // a
+        document.title = "CS 351 - ix9753";
+        document.getElementById("Author").innerHTML = "Skyler Novak";
+
+        // b
+        document.getElementById("Number").innerHTML = "The " + states.length + " States";
+        let initialValue = 0;
+        var total2 = states.reduce(function (accu, curr) {
+            return accu + curr.population
+        }, initialValue);
+        document.getElementById("TotalPop").innerHTML = "Total U.S. population: " + total2;
+
+        // c
+        // sort least populous
+        function comparePop(a, b) {
+            return a.population - b.population;
+        }
+        states.sort(comparePop);
+        // populate least list
+        const leastPopelement = document.querySelector('.least');
+
+        let node = document.createElement("li");
+        let stateNode = document.createTextNode(states[0].state);
+        node.appendChild(stateNode);
+        leastPopelement.appendChild(node);
+
+        node = document.createElement("li");
+        stateNode = document.createTextNode(states[1].state);
+        node.appendChild(stateNode);
+        leastPopelement.appendChild(node);
+
+        node = document.createElement("li");
+        stateNode = document.createTextNode(states[2].state);
+        node.appendChild(stateNode);
+        leastPopelement.appendChild(node);
+
+        node = document.createElement("li");
+        stateNode = document.createTextNode(states[3].state);
+        node.appendChild(stateNode);
+        leastPopelement.appendChild(node);
+
+        node = document.createElement("li");
+        stateNode = document.createTextNode(states[4].state);
+        node.appendChild(stateNode);
+        leastPopelement.appendChild(node);
+
+        // reverse list, populate most populous list
+        states.reverse();
+        const mostPopelement = document.querySelector('.most');
+
+        node = document.createElement("li");
+        stateNode = document.createTextNode(states[0].state);
+        node.appendChild(stateNode);
+        mostPopelement.appendChild(node);
+
+        node = document.createElement("li");
+        stateNode = document.createTextNode(states[1].state);
+        node.appendChild(stateNode);
+        mostPopelement.appendChild(node);
+
+        node = document.createElement("li");
+        stateNode = document.createTextNode(states[2].state);
+        node.appendChild(stateNode);
+        mostPopelement.appendChild(node);
+
+        node = document.createElement("li");
+        stateNode = document.createTextNode(states[3].state);
+        node.appendChild(stateNode);
+        mostPopelement.appendChild(node);
+
+        node = document.createElement("li");
+        stateNode = document.createTextNode(states[4].state);
+        node.appendChild(stateNode);
+        mostPopelement.appendChild(node);
+
+
+        // Question 4
+
+        // a
+        
     </script>
 </body>
 
