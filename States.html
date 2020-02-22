@@ -142,7 +142,47 @@
         // Question 4
 
         // a
-        
+        function compareNames(a, b) {
+          if (a.state < b.state)
+                        return -1;
+                    else if (a.state > b.state)
+                        return 1;
+                    else return 0;
+        };
+
+        function stateTableName() {
+            let tbody = document.querySelector("#AlphaName tbody");
+            states.sort(compareNames);
+            states.forEach(function(state) {
+                let tr = document.createElement("tr");
+                tr.innerHTML = `<td>${state.state}</td><td>${state.population}</td><td>${state.nickname}</td>`;
+                tbody.appendChild(tr);
+            })
+        }
+
+        stateTableName();
+
+        // b
+        function compareStateCap(a, b) {
+            if (a.capital_city < b.capital_city)
+                        return -1;
+            else if (a.capital_city > b.capital_city)
+                        return 1;
+            else return 0;
+        };
+
+        function stateTableCapital() {
+            let tbody = document.querySelector("#AlphaCapital tbody");
+            states.sort(compareStateCap);
+            states.forEach(function(state) {
+                let tr = document.createElement("tr");
+                tr.innerHTML = `<td>${state.capital_city}</td><td>${state.state}</td><td>${state.admission_date}</td>`;
+                tbody.appendChild(tr);
+            })
+        }
+
+        stateTableCapital();
+
     </script>
 </body>
 
