@@ -64,3 +64,31 @@ function eventsTable() {
 
 window.onload = eventsTable;
 ```
+
+# Question 3
+
+## (a)
+
+```html
+<h1>New Membership Application</h1>
+<p>Please enter the following info. As soon as a team 
+    becomes available, we will contact you. 
+</p>
+<p>Full Name: <input type="text" id="ownerName" name="ownerName" placeholder="Babe Ruth"></p>
+<p>Email: <input type="email" id="ownerEmail" name="ownerEmail" placeholder="babe@ruth.com"></p>
+<p>Phone: <input type="tel" id="ownerTel" name="ownerTel" placeholder="510-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></p>
+<p>Experience: <select class="expDropdown">
+    <option value="">No. of Years</option>
+    <option value="0">Never</option>
+    <option value="1">1 year</option>
+    <option value="1">2-3 years</option>
+    <option value="1">4+ years</option>
+    </select></p>
+<p>Comments: <textarea cols="30" rows="8"
+    placeholder="Questions/Comments/etc.">
+    </textarea></p>
+<input type="button" id="submit-button" value="Submit">  
+```
+
+## (b)
+
