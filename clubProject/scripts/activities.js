@@ -8,7 +8,7 @@ function eventsTable() {
     })
 }
 
-// assign first to onload when window has finished loading
+// assign eventsTable to onload when window has finished loading
 // this will load the JS code when the html has finished
 // !!! IMPORTANT --> ORDER MATTERS !!!
 window.onload = eventsTable;

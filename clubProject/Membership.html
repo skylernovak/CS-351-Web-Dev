@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link href="styles/club.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <script src="scripts/membershipThxDialog.js"></script>
         <title>Membership - GSFB</title>
     </head>
 
@@ -28,17 +29,22 @@
             <p>Full Name: <input type="text" id="ownerName" name="ownerName" placeholder="Babe Ruth"></p>
             <p>Email: <input type="email" id="ownerEmail" name="ownerEmail" placeholder="babe@ruth.com"></p>
             <p>Phone: <input type="tel" id="ownerTel" name="ownerTel" placeholder="510-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></p>
-            <p>Experience: <select class="expDropdown">
+            <p>Experience: <select id="ownerExp" class="expDropdown">
                 <option value="">No. of Years</option>
                 <option value="0">Never</option>
                 <option value="1">1 year</option>
-                <option value="1">2-3 years</option>
-                <option value="1">4+ years</option>
+                <option value="2">2-3 years</option>
+                <option value="3">4+ years</option>
                 </select></p>
-            <p>Comments: <textarea cols="30" rows="8"
+            <p>Comments: <textarea id="ownerCom" cols="30" rows="8"
                 placeholder="Questions/Comments/etc.">
                 </textarea></p>
-            <input type="button" id="submit-button" value="Submit">             
+            <input type="button" id="submit-button" value="Submit">
+            <section id="ThanksDialog" class="ShowDialog">
+                <h2><strong>Thanks for applying!</strong></h2>
+                <p><!--Summary info here--></p>
+                <input type="button" id="close-button" value="close">
+            </section>
         </main>
         <footer>
             &#x26be &copy 2020 Skyler Novak &#x26be
