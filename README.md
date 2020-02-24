@@ -30,4 +30,37 @@ loginbtn.addEventListener('click', btnHandler);
 
 ## (a)
 
+```javascript
+events = [
+    {
+        "Name": "Online Snake Draft",
+        "Date": "Sunday, March 22nd"
+    },
+    {
+        "Name": "All-Star Game",
+        "Date": "July 14th"
+    },
+    {
+        "Name": "Trade Deadline",
+        "Date": "August 25th"
+    }
+]
+```
 
+## (b)
+
+![screenshot 2](clubProject/images/scrnsht-2.png)
+
+```javascript
+function eventsTable() {
+    let tbody = document.querySelector("#Events table tbody");
+
+    events.forEach(function(events) {
+        let tr = document.createElement("tr");
+        tr.innerHTML = `<td>${events.Name}</td><td>${events.Date}</td>`;
+        tbody.appendChild(tr);
+    })
+}
+
+window.onload = eventsTable;
+```
