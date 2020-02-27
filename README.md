@@ -137,3 +137,87 @@ function memberScripts() {
 
 window.onload = memberScripts;
 ```
+
+# Question 4
+
+## (a)
+
+![screen shot 3](clubProject/images/scrnsht-3.png)
+
+```css
+#newMemberForm {
+    display: grid;
+    grid-template-columns: 10em 20em;
+    padding: 1em;
+    grid-row-gap:1em;
+    grid-column-gap: 1em;
+    margin: 0.5em;
+    border: solid #55cedc;
+    border-radius: 15px;
+    max-width: 40em;
+  }
+
+  #newMemberForm label {
+    justify-self: end;
+  }
+```
+
+## (b)
+
+```css
+.ShowDialog {
+    background-color: #f4f4f4;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+
+#ThanksDialog {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+```
+
+## (c)
+
+![scrnsht 4](clubProject/images/scrnsht-4.png)
+
+```css
+  #login-grid {
+    display: grid;
+    grid-template-columns: 15em 15em;
+    padding: 1em;
+    grid-row-gap: 10px;
+    grid-column-gap:20px;
+  }
+
+  #login-button {
+      width: 100px;
+  }
+```
+
+## (d)
+
+![scrnsht 5](clubProject/images/scrnsht-5.png)
+
+```css
+header footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    align-self: flex-start;
+}
+```

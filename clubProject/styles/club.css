@@ -34,6 +34,17 @@ ul .active{
     background-color: aliceblue;
 }
 
+header footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    align-self: flex-start;
+}
+
 footer {
     text-align: center;
     font-size: small;
@@ -51,5 +62,52 @@ thead tr {
 }
 
 .ShowDialog {
-    font-size: x-large;
+    background-color: #f4f4f4;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 }
+
+#ThanksDialog {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#newMemberForm {
+    display: grid;
+    grid-template-columns: 10em 20em;
+    padding: 1em;
+    grid-row-gap:1em;
+    grid-column-gap: 1em;
+    margin: 0.5em;
+    border: solid #55cedc;
+    border-radius: 15px;
+    max-width: 40em;
+    z-index: 2;
+  }
+
+  #newMemberForm label {
+    justify-self: end;
+  }
+
+  #login-grid {
+    display: grid;
+    grid-template-columns: 15em 15em;
+    padding: 1em;
+    grid-row-gap: 10px;
+    grid-column-gap:20px;
+  }
+
+  #login-button {
+      width: 100px;
+  }
+  
