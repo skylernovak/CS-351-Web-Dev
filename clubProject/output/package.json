@@ -1,0 +1,11 @@
+{
+  "name": "clubproject",
+  "version": "1.0.0",
+  "description": "GSFB",
+  "main": "\u001b[A\u001b[B\u001b[B\u001b",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "skyler novak",
+  "license": "ISC"
+}

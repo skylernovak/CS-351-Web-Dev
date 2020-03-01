@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="styles/club.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <script src="scripts/membershipThxDialog.js"></script>
+        <title>Membership - GSFB</title>
+    </head>
+
+    <body>
+        <header>
+            <h1 class="pageHeader">Membership</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Activities.html">Activities</a></li>
+                <li><a href="Teams.html">Teams</a></li>
+                <li class="active"><a href="Membership.html">Membership</a></li class="active">
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>New Membership Application</h1>
+            <p>Please enter the following info. As soon as a team 
+                becomes available, we will contact you. 
+            </p>
+            <section id="newMemberForm">
+                <label for="ownerName">Full Name: </label>
+                <input type="text" id="ownerName" name="ownerName" placeholder="Babe Ruth">
+                <label for="ownerEmail">Email: </label>
+                <input type="email" id="ownerEmail" name="ownerEmail" placeholder="babe@ruth.com">
+                <label for="ownerTel">Phone: </label>
+                <input type="tel" id="ownerTel" name="ownerTel" placeholder="510-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <label for="ownerExp">Experience: </label>
+                <select id="ownerExp" class="expDropdown">
+                    <option value="">No. of Years</option>
+                    <option value="0">Never</option>
+                    <option value="1">1 year</option>
+                    <option value="2">2-3 years</option>
+                    <option value="3">4+ years</option>
+                </select>
+                <label for="ownerCom">Comments: </label>
+                <textarea id="ownerCom" cols="30" rows="8"
+                    placeholder="Questions/Comments/etc.">
+                </textarea>
+                <input type="button" id="submit-button" value="Submit">
+            </section>
+            
+            <section id="ThanksDialog">
+                <div class="ShowDialog">
+                    <!--
+                    <h2><strong>Thanks for applying!</strong></h2>
+                    <p>Summary info here</p>
+                    <input type="button" id="close-button" value="close">
+                    -->
+                </div>
+            </section>
+        </main>
+        <footer>
+            &#x26be &copy 2020 Skyler Novak &#x26be
+        </footer>
+    </body>
+</html>
