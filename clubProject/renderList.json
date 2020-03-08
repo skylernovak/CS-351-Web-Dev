@@ -1,0 +1,8 @@
+[
+    {"fname": "index.html", "title": "Golden State Fantasy Baseball Homepage", "header": "Golden State Fantasy Baseball"},
+    {"fname": "About.html", "title": "About - GSFB", "header": "About"},
+    {"fname": "Activities.html", "title": "Activities - GSFB", "header": "Activities"},
+    {"fname": "Login.html", "title": "Login - GSFB", "header": "Login"},
+    {"fname": "Membership.html", "title": "Membership - GSFB", "header": "Membership"},
+    {"fname": "Teams.html", "title": "Teams - GSFB", "header": "Teams"}
+]

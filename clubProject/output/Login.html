@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Login - GSFB</title>
+        <link href="../styles/club.css" rel="stylesheet">
+    </head>
+    <body>
+    <header>
+        <h1 class="pageHeader">Login</h1>
+    </header>
+    <nav>
+        <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="Activities.html">Activities</a></li>
+    <li><a href="Teams.html">Teams</a></li>
+    <li><a href="Membership.html">Membership</a></li>
+    <li><a href="Login.html">Login</a></li>
+</ul>
+    </nav>
+    <main>
+        <h1>Login</h1>
+<div id="login-grid">
+    <p>Email: <input type="text" id="username" name="login-username"></p>
+    <p>Password: <input type="password" id="password-field" placeholder="password"></p>
+    <input type="button" id="login-button" value="Login">
+</div>
+
+<script>
+let loginbtn = document.getElementById("login-button");
+
+function btnHandler() {
+    let user_email = document.getElementById("username").value;
+    let user_pword = document.getElementById("password-field").value;
+    console.log("Email: " + user_email);
+    console.log("Password: " + user_pword);
+}
+
+loginbtn.addEventListener('click', btnHandler);
+</script>
+    </main>
+    <footer>
+        &#x26be &copy 2020 Skyler Novak &#x26be
+    </footer>
+    </body>
+</html>
