@@ -18,6 +18,9 @@ main {
     background-color: lightgreen;
     margin: 10px;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 nav {
@@ -28,6 +31,31 @@ nav {
     border: chocolate solid 5px;
     list-style-type: none;
     text-decoration: none;
+    display: flex;
+    align-self: flex-start;
+    position: fixed;
+}
+  
+.dropdown span {
+    display: inline-block;
+    background-color:lightsteelblue;
+    width: min-content;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    background-color: lightsteelblue;
+    padding: 0.5em;
+    border: solid chocolate 5px;
+    min-width: 10em;
+    z-index: 1;
+  }
+  
+.dropdown:hover .dropdown-content {
+    display: contents;
 }
 
 ul .active{
@@ -38,11 +66,6 @@ header footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-nav {
-    display: flex;
-    align-self: flex-start;
 }
 
 footer {

@@ -117,3 +117,20 @@ HTML boilerplate removed and javascript still functions
 
 ![screenshot 3](images/scrnsht-3.png)
 
+# Question 4
+
+## (a)
+
+![screenshot 4](images/scrnsht-4.png)
+
+## (b)
+
+![screenshot 5](images/scrnsht-5.png)
+
+## (c)
+
+enabled menu to open
+
+## (d)
+
+http://csweb01.csueastbay.edu/~ix9753/clubProject/
