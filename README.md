@@ -1,4 +1,4 @@
-# Homework 5 Solution
+# Homework 6 Solution
 **Skyler Novak**
 
 **NetID: ix9753**
@@ -7,130 +7,45 @@
 
 ## (a)
 
-Node.js version 12.16.1
+We will use templates to help us generate HTML in the following three contexts:
+
++ Server Side HTML page rendering
++ Static Web Pages
++ Client Side HTML page rendering
 
 ## (b)
 
-I ran npm init and followed the question prompts. Most of the questions I accepted the default.
+We used three different types of files in our page rendering. Below are the files, and why they are important to our website development process:
+
++ `base.njk`: This is a template files created with nunjucks template engine. This helps us automate the web page development process. Instead of writing all the HTML for each and every page, the template takes care of all the tedious work of writing consistent headers, footers, nav, etc, on each page. This also helps create a cohesive look amoungst all our web pages, and reduces the chance of an error or mistake on a page. 
++ `content/*.html`: All of the HTML files found in the content folder contain the code that will populate the <main> html element on each page we generate. This is where our javascript program will pull the data from. 
++ `runIt.js`: This is our JavaScript program that will generate all the HTML pages. When it is run, it will pull the content from each HTML file in the content folder, and use it along with the template to create a web page. 
 
 ## (c)
 
-json stands for JavaScript Object Notation
+**Mustache**: A javascript templating engine that does not use logic. There is no if statments, it simply reads the HTML to be templated, but can read specific attributes of objects if desired. This seems like an interesting concept to the templating approach, but I believe logic would make templating simplier to implelemt. [mustache.github.io](https://mustache.github.io)
 
-## (d)
-
-number 2 is the correct json syntax
-
-`{"name": "Dr. B", "course": "Web stuff"}`
-
-## (e)
-
-JSON files can be used to interchange data between application, such as a JavaScript application and a C++ application. 
-
-## (f)
-
-my directory structure
-
-![screenshot 1](images/scrnsht-1.png)
-
-## (g)
-
-added the appropriate lines to .gitignore
-
-## (h)
-
-installed Nunjucks version 3.2.0
+**Handlebar**: Built upon Mustache, this template engine makes extensive use of block helpers, allowing access to a section of the template with a different context. The user can also create custom helpers. This appears to be very popular and worth studying further. [handlebarsjs.com](http://handlebarsjs.com)
 
 # Question 2
 
 ## (a)
 
-```javascript
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Your Club Name Here - need templates</title>
-        <link href="../styles/club.css" rel="stylesheet">
-    </head>
-    <body>
-    <nav>
-      {% include "navMenu.html" %}
-    </nav>
-    <main>
-        {{mainContent | safe}}
-    </main>
-    <footer>&#x26be &copy 2020 Skyler Novak &#x26be</footer>
-    </body>
-</html>
-```
+Computer devices come with an ethernet identification from the manufacturer. On an ethernet connection, this identifier is used to communicate between devices. This identifier however, does not scale well when many devices are connected. So your internet service provider gives computer devices an IP address, and this can be used to communicate between computer devices across exponentially much larger networks. 
 
 ## (b)
 
-boilerplate html removed from index.html
+In order to transfer a 200KB image with a 1500 byte limit, we must utilize packets. A packet is a small partial collection of data from the original 200KB image, say about 1400 bytes. The other 100 bytes would be used as a header for the packet, stating its source and destination, and position in the overall packet distribution order. These packets would have to be sent multiple times, until the destination acknolwdges is had recieved a particular packet. There are bound to be some packets that end up missing during transmission, so the source must take precautions to ensure the destination recieves all the delivered packets.  I think the transport layer should handle this functionality, since it is transporting all of these packets, it should be charged with keeping them in order and ensuring they arrive safely. 
 
 ## (c)
 
-runIt.js file created
+TCP provides better reliability of transport of byte streams over UCP. Using TCP, our machines can communicate with multiple other machines without worry of port collisions. TCP ensures all the data is present, and in the correct order. UDP is faster than TCP, but does not garentee all the data has been delivered. 
 
 ## (d)
 
-![screenshot 2](images/scrnsht-2.png)
+TCP requires a source and destination port so that it can send the information, and then verify that the information has been recieved. If it did not include a source port, it would be fire and forget, with no regard for if the information it's transmitting is good and complete. 
 
 # Question 3
 
 ## (a)
 
-```javascript
-[
-    {"fname": "index.html", "title": "Golden State Fantasy Baseball Homepage", "header": "Golden State Fantasy Baseball"},
-    {"fname": "About.html", "title": "About - GSFB", "header": "About"},
-    {"fname": "Activities.html", "title": "Activities - GSFB", "header": "Activities"},
-    {"fname": "Login.html", "title": "Login - GSFB", "header": "Login"},
-    {"fname": "Membership.html", "title": "Membership - GSFB", "header": "Membership"},
-    {"fname": "Teams.html", "title": "Teams - GSFB", "header": "Teams"}
-]
-```
-
-## (b)
-
-```html
-<ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="About.html">About</a></li>
-    <li><a href="Activities.html">Activities</a></li>
-    <li><a href="Teams.html">Teams</a></li>
-    <li><a href="Membership.html">Membership</a></li>
-    <li><a href="Login.html">Login</a></li>
-</ul>
-```
-
-## (c)
-
-template now includes meta data
-
-## (d)
-
-HTML boilerplate removed and javascript still functions
-
-## (e)
-
-![screenshot 3](images/scrnsht-3.png)
-
-# Question 4
-
-## (a)
-
-![screenshot 4](images/scrnsht-4.png)
-
-## (b)
-
-![screenshot 5](images/scrnsht-5.png)
-
-## (c)
-
-enabled menu to open
-
-## (d)
-
-http://csweb01.csueastbay.edu/~ix9753/clubProject/
