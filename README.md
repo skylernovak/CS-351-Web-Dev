@@ -49,3 +49,6 @@ TCP requires a source and destination port so that it can send the information, 
 
 ## (a)
 
+![screenshot 1](images/scrnsht-1.png)
+
+![screenshot 2](images/scrnsht-2.png)
