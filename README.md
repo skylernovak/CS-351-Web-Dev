@@ -101,3 +101,30 @@ Markdown plugin successfully installed and working
 ## (a)
 
 YAML renders title and other meta data properly
+
+## (b)
+
+```JavaScript
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ title }}</title>
+        <link href="./styles/club.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+    <header>
+        <h1 class="pageHeader">{{ header }}</h1>
+    </header>
+    <nav>
+        {% include "navMenu.html" %}
+    </nav>
+    <main>
+        {{contents | safe}}
+    </main>
+    <footer>
+        &#x26be &copy 2020 Skyler Novak &#x26be
+    </footer>
+    </body>
+</html>
+```
