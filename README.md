@@ -66,3 +66,26 @@ my build directory exactly matches my src directory
 ## (d)
 
 ![screenshot 5](images/scrnsht-5.png)
+
+# Question 4
+
+## (a)
+
+```markdown
+
+# First Pitch
+
+<p>In 2014, five friends and their love for baseball started it all. Based on the ESPN Fantasy platform.</p>
+
+<P>All die-hard San Francisco Giants fans!</P>
+
+<p>Forest, Skyler, Cameron, Frankie, and Ging</p>
+
+<div class="" style="max-width: 100%;max-height: 100%;display: inline-block;">
+
+![Core Four](images/GSFB-2.jpg)
+
+![2016 All-Star Game](images/GSFB-3.jpg)
+```
+
+## (b)
