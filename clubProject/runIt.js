@@ -1,5 +1,6 @@
 const Metalsmith  = require('metalsmith');
 const pluginInfo = require('./infoPlugin.js');
+const metalsmithMD = require('metalsmith-markdown');
 
 console.log("Starting Processing!");
 Metalsmith(__dirname)         // __dirname defined by node.js:
@@ -12,9 +13,11 @@ Metalsmith(__dirname)         // __dirname defined by node.js:
   .clean(true)                // clean destination before
   .ignore("*.jpg")           // Use to ignore files and directories
   .use(pluginInfo())
+  .use(metalsmithMD())
   .build(function(err, files) {      // build process
     if (err) {
         throw err;          // error handling is required
     } else {
-        console.log(`Finished Processing: ${Object.keys(files)}`);
+        console.log("Output files: ");
+        console.log(Object.keys(files));
   }});
