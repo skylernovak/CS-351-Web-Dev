@@ -12,17 +12,14 @@ Metalsmith(__dirname)         // __dirname defined by node.js:
   .source('./src')            // source directory
   .destination('./build')     // destination directory
   .clean(true)                // clean destination before
-  //.ignore("*.jpg")            // Use to ignore files and directories
-  .use(pluginInfo())          // shows plugin is transforming files to JS Objects
   .use(metalsmithMD())        // Converts src MD files to build HTML files
   .use(layouts({              // Will use templates to complete build HTML files
     default: "base.njk",
-    directory: "layouts"
+    directory: "layouts",
+    pattern: ["*.html", "!*.css"]
   }))
   .build(function(err, files) {      // build process
     if (err) {
         throw err;          // error handling is required
-    } else {
-        console.log("Output files: ");
-        console.log(Object.keys(files));
-  }});
+    } 
+  });
