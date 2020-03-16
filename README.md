@@ -96,3 +96,8 @@ Markdown plugin successfully installed and working
 
 ![package.json file](images/scrnsht-6.png)
 
+# Question 5
+
+## (a)
+
+YAML renders title and other meta data properly
