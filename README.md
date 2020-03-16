@@ -89,3 +89,10 @@ my build directory exactly matches my src directory
 ```
 
 ## (b)
+
+Markdown plugin successfully installed and working
+
+## (c)
+
+![package.json file](images/scrnsht-6.png)
+

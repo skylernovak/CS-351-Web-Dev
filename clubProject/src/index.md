@@ -1,3 +1,9 @@
+---
+title: Golden State Fantasy Baseball Homepage
+header: Golden State Fantasy Baseball
+
+---
+
 # Welcome to the Golden State Fantasy Baseball homepage!
 
 <p>10 team, Head-to-Head points league</p>

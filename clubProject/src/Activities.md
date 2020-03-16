@@ -1,3 +1,9 @@
+---
+title: Activities - GSFB
+header: Activities
+
+---
+
 <head>
 
 <script src="./scripts/eventData.js"></script>

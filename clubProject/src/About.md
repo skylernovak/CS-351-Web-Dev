@@ -1,3 +1,9 @@
+---
+title: About - GSFB
+header: About
+
+---
+
 <main>
 
 # First Pitch
