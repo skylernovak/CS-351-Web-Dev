@@ -1,4 +1,4 @@
-# Homework 6 Solution
+# Homework 7 Solution
 **Skyler Novak**
 
 **NetID: ix9753**
@@ -7,128 +7,122 @@
 
 ## (a)
 
-We will use templates to help us generate HTML in the following three contexts:
+Three reasons I would use a static web site are:
 
-+ Server Side HTML page rendering
-+ Static Web Pages
-+ Client Side HTML page rendering
++ Security - Static web pages reduce risks associated with dynamic server generated web pages
+
++ Reliability - Static web pages suffer from less issues conneting to the pages, and assests failing to load are minimized. 
+
++ Speed - Static web pages are much faster to load than dynamic ones. 
 
 ## (b)
 
-We used three different types of files in our page rendering. Below are the files, and why they are important to our website development process:
-
-+ `base.njk`: This is a template files created with nunjucks template engine. This helps us automate the web page development process. Instead of writing all the HTML for each and every page, the template takes care of all the tedious work of writing consistent headers, footers, nav, etc, on each page. This also helps create a cohesive look amoungst all our web pages, and reduces the chance of an error or mistake on a page. 
-+ `content/*.html`: All of the HTML files found in the content folder contain the code that will populate the <main> html element on each page we generate. This is where our javascript program will pull the data from. 
-+ `runIt.js`: This is our JavaScript program that will generate all the HTML pages. When it is run, it will pull the content from each HTML file in the content folder, and use it along with the template to create a web page. 
+By default, Metalsmith takes the files from the source folder, processes them with any plugins, and places these new files in the destination directory. Metalsmith represents files in the source directory as a JavaScript object. 
 
 ## (c)
 
-**Mustache**: A javascript templating engine that does not use logic. There is no if statments, it simply reads the HTML to be templated, but can read specific attributes of objects if desired. This seems like an interesting concept to the templating approach, but I believe logic would make templating simplier to implelemt. [mustache.github.io](https://mustache.github.io)
+You may want to attach information such as page titles, or JS source files, as metadata in the sorce files. You can add metadata in the following way:
 
-**Handlebar**: Built upon Mustache, this template engine makes extensive use of block helpers, allowing access to a section of the template with a different context. The user can also create custom helpers. This appears to be very popular and worth studying further. [handlebarsjs.com](http://handlebarsjs.com)
+At the top of the source files, include
+
+```YAML
+---
+    title: myTitle
+    jsSRC: myFile.js
+---
+```
+
+all metadata must be inbetween a starting and ending "---". This is YAML formatting. 
+
+## (d)
+
+A metalsmith plugin is given three pieces of information. 1) the JavaScript object files to be manipulated 2) Metalsmith 3) done objects that signal an operation has been completed during asynchronous operations. By default, the JavaScript object of the source files are given to a Metalsmith plugin. 
 
 # Question 2
 
 ## (a)
 
-Computer devices come with an ethernet identification from the manufacturer. On an ethernet connection, this identifier is used to communicate between devices. This identifier however, does not scale well when many devices are connected. So your internet service provider gives computer devices an IP address, and this can be used to communicate between computer devices across exponentially much larger networks. 
+The HTTP method Get is used when i visit the BlackBoard log in page request. The response code is `200 OK` which means the response request has succeeded. HTTP version 1.1 is used. 
 
 ## (b)
 
-In order to transfer a 200KB image with a 1500 byte limit, we must utilize packets. A packet is a small partial collection of data from the original 200KB image, say about 1400 bytes. The other 100 bytes would be used as a header for the packet, stating its source and destination, and position in the overall packet distribution order. These packets would have to be sent multiple times, until the destination acknolwdges is had recieved a particular packet. There are bound to be some packets that end up missing during transmission, so the source must take precautions to ensure the destination recieves all the delivered packets.  I think the transport layer should handle this functionality, since it is transporting all of these packets, it should be charged with keeping them in order and ensuring they arrive safely. 
+GET / HTTP/1.1
+
+Host: bb.csueastbay.edu
+
+Connection: keep-alive
+
+Cache-Control: max-age=0
+
+Upgrade-Insecure-Requests: 1
+
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36 OPR/67.0.3575.87
+
+Sec-Fetch-Dest: document
+
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+
+Sec-Fetch-Site: none
+
+Sec-Fetch-Mode: navigate
+
+Sec-Fetch-User: ?1
+
+Accept-Encoding: gzip, deflate, br
+
+Accept-Language: en-US,en;q=0.9
+
+Cookie: AWSELB=D3570BC914533D9ACC5FBEA2A258730F699E691A0AC95F4514958C9FF4BF56EAF7767641A5C5E92CB998EE0E9B2C7D078D47B8E475CDC13F023DACA557A5F053AA4579C9C1; AWSELBCORS=D3570BC914533D9ACC5FBEA2A258730F699E691A0AC95F4514958C9FF4BF56EAF7767641A5C5E92CB998EE0E9B2C7D078D47B8E475CDC13F023DACA557A5F053AA4579C9C1; __utma=208548673.154373181.1584913124.1584913124.1584913124.1; __utmc=208548673; __utmz=208548673.1584913124.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmt=1; __utmb=208548673.1.10.1584913124; JSESSIONID=F0205ADBD3B027DD82D727A4A098DC68; BbRouter=expires:1584914927,id:8F6B7D5198CE0A094DDD8B2B5C757184,signature:2cf7147da1a1b81b2481d3c8f767c18c30e533055ebd7d56b41ce692d61f3651,site:aefdf5db-8c6a-4e8e-8bf7-fb9f1f4dcdf0,v:2,xsrf:15cc218e-402c-4f30-9a70-09c2005e586e
 
 ## (c)
 
-TCP provides better reliability of transport of byte streams over UCP. Using TCP, our machines can communicate with multiple other machines without worry of port collisions. TCP ensures all the data is present, and in the correct order. UDP is faster than TCP, but does not garentee all the data has been delivered. 
+Cache-Control: private
+
+Cache-Control: max-age=0
+
+Cache-Control: no-store
+
+Cache-Control: must-revalidate
+
+Connection: keep-alive
+
+Content-Encoding: gzip
+
+Content-Language: en-US
+
+Content-Length: 18472
+
+Content-Security-Policy: frame-ancestors 'self'
+
+Content-Type: text/html;charset=UTF-8
+
+Date: Sun, 22 Mar 2020 21:39:23 GMT
+
+Expires: Fri, 22 Mar 2019 21:39:23 GMT
+
+Last-Modified: Wed, 22 Mar 2000 22:39:23 GMT
+
+P3P: CP="CAO PSA OUR"
+
+Pragma: private
+
+Server: openresty/1.9.3.1
+
+Set-Cookie: BbRouter=expires:1584914963,id:8F6B7D5198CE0A094DDD8B2B5C757184,signature:29524ffe3ec804600ecc60d0ed6781075df4c0ca22dd51c10553b35de0d1d7e9,site:aefdf5db-8c6a-4e8e-8bf7-fb9f1f4dcdf0,v:2,xsrf:15cc218e-402c-4f30-9a70-09c2005e586e; Path=/; Secure; HttpOnly
+
+Vary: Accept-Encoding
+
+X-Blackboard-appserver: ip-10-145-60-190.ec2.internal
+
+X-Blackboard-product: Blackboard Learn &#8482; 3800.4.0-rel.40+d78544e
+
+X-Frame-Options: SAMEORIGIN
 
 ## (d)
 
-TCP requires a source and destination port so that it can send the information, and then verify that the information has been recieved. If it did not include a source port, it would be fire and forget, with no regard for if the information it's transmitting is good and complete. 
+Blackboard is based on the OpenResty Server. The associated set cookies are:
 
-# Question 3
+BbRouter=expires:1584914963,id:8F6B7D5198CE0A094DDD8B2B5C757184,signature:29524ffe3ec804600ecc60d0ed6781075df4c0ca22dd51c10553b35de0d1d7e9,site:aefdf5db-8c6a-4e8e-8bf7-fb9f1f4dcdf0,v:2,xsrf:15cc218e-402c-4f30-9a70-09c2005e586e; Path=/; Secure; HttpOnly
 
-## (a)
+## (e)
 
-![screenshot 1](images/scrnsht-1.png)
-
-![screenshot 2](images/scrnsht-2.png)
-
-## (b)
-
-![screenshot 3](images/scrnsht-3.png)
-
-## (c)
-
-![screenshot 4](images/scrnsht-4.png)
-
-my build directory exactly matches my src directory
-
-## (d)
-
-![screenshot 5](images/scrnsht-5.png)
-
-# Question 4
-
-## (a)
-
-```markdown
-
-# First Pitch
-
-<p>In 2014, five friends and their love for baseball started it all. Based on the ESPN Fantasy platform.</p>
-
-<P>All die-hard San Francisco Giants fans!</P>
-
-<p>Forest, Skyler, Cameron, Frankie, and Ging</p>
-
-<div class="" style="max-width: 100%;max-height: 100%;display: inline-block;">
-
-![Core Four](images/GSFB-2.jpg)
-
-![2016 All-Star Game](images/GSFB-3.jpg)
-```
-
-## (b)
-
-Markdown plugin successfully installed and working
-
-## (c)
-
-![package.json file](images/scrnsht-6.png)
-
-# Question 5
-
-## (a)
-
-YAML renders title and other meta data properly
-
-## (b)
-
-```JavaScript
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>{{ title }}</title>
-        <link href="./styles/club.css" type="text/css" rel="stylesheet">
-    </head>
-    <body>
-    <header>
-        <h1 class="pageHeader">{{ header }}</h1>
-    </header>
-    <nav>
-        {% include "navMenu.html" %}
-    </nav>
-    <main>
-        {{contents | safe}}
-    </main>
-    <footer>
-        &#x26be &copy 2020 Skyler Novak &#x26be
-    </footer>
-    </body>
-</html>
-```
-
-## (C)
-
-[Golden State Fantasy Baseball](http://csweb01.csueastbay.edu/~ix9753/clubProject/)
