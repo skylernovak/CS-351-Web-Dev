@@ -126,3 +126,46 @@ BbRouter=expires:1584914963,id:8F6B7D5198CE0A094DDD8B2B5C757184,signature:29524f
 
 ## (e)
 
+```JavaScript
+var myDate = new Date()
+myDate.toISOString().toLowerCase().split("t")[1]
+```
+
+The second line takes the `myDate` object, and then performs each object method on it, in order from left to right. First the date object is set to ISO 8601 format of YYYY-MM-DDThh:mm:ss.sssZ where T is a deliminator between the date and the time components. Next the string is converted to lower case, and then finally the plit method divides the object string into substrings based on the deliminator "t". So we have an array of strings { "YYYY-MM-DD", "hh:mm:ss.sssZ" }. the [1] at the end of the statement will return the time component of the myDate object. 
+
+## (f)
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_Types#Comments
+
+Protocol: https://
+
+Domain: developer.mozilla.org
+
+Path: /en-US/docs/Web/JavaScript/Guide/Grammar_and_Types
+
+Fragment: #Comments
+
+https://www.google.com/search?q=gaia+mission&rlz=1CYPO_enUS751
+
+Protocol: https://
+
+Domain: www.google.com
+
+Path: /search
+
+Query: ?q=gaia+mission&rlz=1CYPO_enUS751
+
+http://127.0.0.2:8282/static/index.html
+
+Protocol: http://
+
+Domain: 127.0.0.2
+
+Port: 8282
+
+Path: /static/index.html
+
+# Question 3
+
+## (a)
+
