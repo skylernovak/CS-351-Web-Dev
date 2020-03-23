@@ -169,3 +169,25 @@ Path: /static/index.html
 
 ## (a)
 
+The output is:
+
+```
+Is this the start?
+When does this print?
+Is this the end?
+this is a msg from CS651
+This is a msg from CS351
+```
+
+This is because there is not actually a zero delay with the callback functions. The two callback functions are added to the event queue, but they will not execute until all other events have processed. The fact that they both have 0 milliseconds to execute in the setTimeout function is a minimum time, not a garenteed time to execute. 
+
+## (b)
+
+The following code establishes an array of 3 promises. Then a promise race is implemented. Each of the three promises is set to resolve sometime between 0 and 1 seconds. The promise that resolves first will be declared the winner and will print to the screen. As soon as one promise resolves or rejects, the race will conclude. To determine the winner, append `.then(winner)` to the last line as so:
+
+```JavaScript
+racingPs = Promise.race(myPs).then(winner);
+```
+
+## (c)
+
