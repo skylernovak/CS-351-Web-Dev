@@ -198,3 +198,11 @@ racingPs = Promise.race(myPs).then(winner);
 ![screenshot 2](images/scrnsht-2.png)
 
 # Question 4
+
+## (a)
+
+![screenshot 3](images/scrnsht-3.png)
+
+## (b)
+
+![screenshot 4](images/scrnsht-4.png)
