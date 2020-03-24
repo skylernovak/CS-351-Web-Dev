@@ -14,7 +14,7 @@ let thisDate = myDate.toLocaleDateString();
 let thisTime = myDate.toLocaleTimeString();
 let info = { date: thisDate, time: thisTime, name: "Skyler Novak", id: "ix9753" }
 
-app.get('/views', function (req, res) {
+app.get('/', function (req, res) {
     res.render('base.njk', info);
 });
 
