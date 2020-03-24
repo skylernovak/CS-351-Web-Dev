@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+app.use(express.static('public')); // For static assets
 const nunjucks = require('nunjucks');
 nunjucks.configure('views', {
     autoescape: true,

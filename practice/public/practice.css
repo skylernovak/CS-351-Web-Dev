@@ -1,0 +1,31 @@
+main {
+    border: 7px double #1C6EA4;
+    text-align: center;
+    background-color: black;
+}
+
+h1 {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 25px;
+    letter-spacing: 0.2px;
+    word-spacing: 2px;
+    color: lime;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+}
+
+h2 {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    word-spacing: 2px;
+    color: lime;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+}
