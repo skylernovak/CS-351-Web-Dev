@@ -1,0 +1,136 @@
+
+html {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.pageHeader {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: blanchedalmond;
+    margin: 1em;
+    padding: 1em;
+}
+
+main {
+    background-color: lightgreen;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav {
+    background-color: lightsteelblue;
+    margin: 5px;
+    padding: 5px;
+    max-width: 10em;
+    border: chocolate solid 5px;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    align-self: flex-start;
+    position: fixed;
+}
+  
+.dropdown span {
+    display: inline-block;
+    background-color:lightsteelblue;
+    width: min-content;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    background-color: lightsteelblue;
+    padding: 0.5em;
+    border: solid chocolate 5px;
+    min-width: 10em;
+    z-index: 1;
+  }
+  
+.dropdown:hover .dropdown-content {
+    display: contents;
+}
+
+ul .active{
+    background-color: aliceblue;
+}
+
+header footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    font-size: small;
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding-left: 1em;
+    padding-right: 2em;
+  }
+
+thead tr {
+    border: 3px solid black;
+}
+
+.ShowDialog {
+    background-color: #f4f4f4;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+
+#ThanksDialog {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#newMemberForm {
+    display: grid;
+    grid-template-columns: 10em 20em;
+    padding: 1em;
+    grid-row-gap:1em;
+    grid-column-gap: 1em;
+    margin: 0.5em;
+    border: solid #55cedc;
+    border-radius: 15px;
+    max-width: 40em;
+    z-index: 2;
+  }
+
+  #newMemberForm label {
+    justify-self: end;
+  }
+
+  #login-grid {
+    display: grid;
+    grid-template-columns: 15em 15em;
+    padding: 1em;
+    grid-row-gap: 10px;
+    grid-column-gap:20px;
+  }
+
+  #login-button {
+      width: 100px;
+  }
+  
