@@ -1,0 +1,45 @@
+{% extends "base.njk" %}
+
+{% block title %}
+<title>Membership - GSFB</title>
+{% endblock %}
+
+{% block pageHeader %}
+<h1 class="pageHeader">Membership</h1>
+{% endblock %}
+
+{% block main %}
+<h1>New Membership Application</h1>
+<p>Please enter the following info. As soon as a team 
+    becomes available, we will contact you. 
+</p>
+<section id="newMemberForm">
+    <label for="ownerName">Full Name: </label>
+    <input type="text" id="ownerName" name="ownerName" placeholder="Babe Ruth">
+    <label for="ownerEmail">Email: </label>
+    <input type="email" id="ownerEmail" name="ownerEmail" placeholder="babe@ruth.com">
+    <label for="ownerTel">Phone: </label>
+    <input type="tel" id="ownerTel" name="ownerTel" placeholder="510-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+    <label for="ownerExp">Experience: </label>
+    <select id="ownerExp" class="expDropdown">
+        <option value="">No. of Years</option>
+        <option value="0">Never</option>
+        <option value="1">1 year</option>
+        <option value="2">2-3 years</option>
+        <option value="3">4+ years</option>
+    </select>
+    <label for="ownerCom">Comments: </label>
+    <textarea id="ownerCom" cols="30" rows="8"
+        placeholder="Questions/Comments/etc.">
+    </textarea>
+    <input type="button" id="submit-button" value="Submit">
+</section>
+            
+<section id="ThanksDialog">
+    <div class="ShowDialog">
+        <!-- Modal Dialog -->
+    </div>
+</section>
+
+<script src="../scripts/membershipThxDialog.js"></script>
+{% endblock %}

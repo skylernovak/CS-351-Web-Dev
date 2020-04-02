@@ -54,3 +54,31 @@ Directories created with copies of assets added
 
 ## (c)
 
+```Javascript
+{% extends "base.njk" %}
+
+{% block metaStuff %}
+<title>About - GSFB</title>
+{% endblock %}
+
+{% block pageHeader %}
+<h1 class="pageHeader">About</h1>
+{% endblock %}
+    
+{% block main %}
+<h1 id="first-pitch">First Pitch</h1>
+<p>In 2014, five friends and their love for baseball started it all. Based on the ESPN Fantasy platform.</p>
+
+<P>All die-hard San Francisco Giants fans!</P>
+
+<p>Forest, Skyler, Cameron, Frankie, and Ging</p>
+
+<div class="" style="max-width: 100%;max-height: 100%;display: inline-block;">
+
+<p><img src="images/GSFB-2.jpg" alt="Core Four"></p>
+<p><img src="images/GSFB-3.jpg" alt="2016 All-Star Game"></p>
+</div>
+
+<p>This page is part of an ongoing project in my Website Development course at California State University, East Bay.</p>
+{% endblock %}
+```
