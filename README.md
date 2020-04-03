@@ -82,3 +82,8 @@ Directories created with copies of assets added
 <p>This page is part of an ongoing project in my Website Development course at California State University, East Bay.</p>
 {% endblock %}
 ```
+
+## (d)
+
+trying to get server working 100%
+pages load, but activities cant find scripts

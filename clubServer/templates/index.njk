@@ -1,31 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Golden State Fantasy Baseball Homepage</title>
-        <link href="./styles/club.css" type="text/css" rel="stylesheet">
-    </head>
-    <body>
-    <header>
-        <h1 class="pageHeader">Golden State Fantasy Baseball</h1>
-    </header>
-    <nav>
-        <div class="dropdown">
-    <span>Menu</span>
-    <div class="dropdown-content">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Activities.html">Activities</a></li>
-            <li><a href="Teams.html">Teams</a></li>
-            <li><a href="Membership.html">Membership</a></li>
-            <li><a href="Login.html">Login</a></li>
-        </ul>
-    </div>
-</div>
-    </nav>
-    <main>
-        <h1 id="welcome-to-the-golden-state-fantasy-baseball-homepage">Welcome to the Golden State Fantasy Baseball homepage!</h1>
+{% extends "base.njk" %}
+
+{% block title %}
+<title>Golden State Fantasy Baseball Homepage</title>
+{% endblock %}
+
+{% block pageTitle %}
+<h1 class="pageHeader">Golden State Fantasy Baseball</h1>
+{% endblock %}
+
+{% block main %}
+<h1 id="welcome-to-the-golden-state-fantasy-baseball-homepage">Welcome to the Golden State Fantasy Baseball homepage!</h1>
 <p>10 team, Head-to-Head points league</p>
 
 <p><img src="images/GSFB-1.jpg" alt="Core Four Mets Game"></p>
@@ -62,9 +46,4 @@
 </div>
 
 <p>Since 2014</p>
-    </main>
-    <footer>
-        &#x26be &copy 2020 Skyler Novak &#x26be
-    </footer>
-    </body>
-</html>
+{% endblock %}
