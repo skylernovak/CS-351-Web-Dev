@@ -10,6 +10,9 @@ nunjucks.configure('templates', {
 // Global variable to hold new team registrations on membership page form submission
 let newTeamRegs = [];
 
+// Bring in club event data file
+const events = require('./eventData.json');
+
 app.get('/', function (req, res) {
     res.render('index.njk');
 });
@@ -19,7 +22,7 @@ app.get('/about', function(req, res){
 });
 
 app.get('/activities', function(req, res){
-    res.render('Activities.njk');
+    res.render('Activities.njk', {events: events});
 });
 
 app.get('/login', function(req, res){
@@ -32,7 +35,7 @@ app.get('/membership', function(req, res){
 
 app.get("/newTeamReg", function(req, res){
     newTeamRegs.push(req.query);
-    console.log(`New Team Registars: ${JSON.stringify(newTeamRegs)}`);
+    // console.log(`New Team Registars: ${JSON.stringify(newTeamRegs)}`);
     res.render("RegThanks.njk", req.query);
 });
 

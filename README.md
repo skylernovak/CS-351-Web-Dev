@@ -151,3 +151,49 @@ app.listen(port, host, function () {
 
 ## (a)
 
+```Javascript
+// Bring in club event data file
+const events = require('./eventData.json');
+
+app.get('/activities', function(req, res){
+    res.render('Activities.njk', {events: events});
+});
+```
+
+## (b)
+
+```Javascript
+{% extends "base.njk" %}
+
+{% block title %}
+<title>Activities - GSFB</title>
+{% endblock %}
+
+{% block pageHeader %}
+<h1 class="pageHeader">Activities</h1>
+{% endblock %}
+
+{% block main %}
+<section id="Events">
+    <h2 id="gsfb-events">GSFB Events</h2>
+    <table>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Date</td>
+            </tr>
+        </thead>
+        <tbody>
+            {%for event in events %}
+                <tr><td>{{event.Name}}</td><td>{{event.Date}}</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</section>
+{% endblock %}
+```
+
+# Question 4
+
+## (a)
+
