@@ -1,0 +1,20 @@
+{% extends "base.njk" %}
+
+{% block title %}
+<title>Thanks for registering!</title>
+{% endblock %}
+
+{% block pageHeader %}
+    <h1 class="pageHeader">Thank You!</h1>
+{% endblock %}
+
+{% block main %}
+<h1>Thanks for Signing up</h1>
+<section>
+    <h2>We will contact you when a team becomes available.</h2>
+    <p>Thanks {{ownerName}}, as soon as we expand our divisions, or a owner withdraws from the league, a spot will open up for you.</p>
+    <p>Your contact information:</p>
+    <p>Email: <em>{{ownerEmail}}</em></p>
+    <p>Telephone: <em>{{ownerTel}}</em></p>
+</section>
+{% endblock %}

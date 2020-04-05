@@ -7,6 +7,9 @@ nunjucks.configure('templates', {
     express: app
 });
 
+// Global variable to hold new team registrations on membership page form submission
+let newTeamRegs = [];
+
 app.get('/', function (req, res) {
     res.render('index.njk');
 });
@@ -27,12 +30,18 @@ app.get('/membership', function(req, res){
     res.render('Membership.njk');
 });
 
+app.get("/newTeamReg", function(req, res){
+    newTeamRegs.push(req.query);
+    console.log(`New Team Registars: ${JSON.stringify(newTeamRegs)}`);
+    res.render("RegThanks.njk", req.query);
+});
+
 app.get('/teams', function(req, res){
     res.render('Teams.njk');
 });
 
-let host = '127.0.0.1';
-let port = '7373';
+let host = '127.9.19.28';
+let port = '4188';
 app.listen(port, host, function () {
     console.log("clubServer via Templates listening on IPv4: " + host +
     ":" + port);

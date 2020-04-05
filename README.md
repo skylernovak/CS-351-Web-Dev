@@ -16,15 +16,15 @@ Directories created with copies of assets added
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        {% block metaStuff %}
-            <title>Golden State Fantasy Baseball Homepage</title>
+        {% block title %}
+            <!-- <title>Golden State Fantasy Baseball Homepage</title> -->
         {% endblock %}
         <link href="./styles/club.css" type="text/css" rel="stylesheet">
     </head>
     <body>
     <header>
         {% block pageHeader %}
-            <h1 class="pageHeader">Golden State Fantasy Baseball</h1>
+            <!-- <h1 class="pageHeader">Golden State Fantasy Baseball</h1> -->
         {% endblock %}
     </header>
     <nav>
@@ -32,18 +32,20 @@ Directories created with copies of assets added
             <span>Menu</span>
             <div class="dropdown-content">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Activities.html">Activities</a></li>
-                    <li><a href="Teams.html">Teams</a></li>
-                    <li><a href="Membership.html">Membership</a></li>
-                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/activities">Activities</a></li>
+                    <li><a href="/teams">Teams</a></li>
+                    <li><a href="/membership">Membership</a></li>
+                    <li><a href="/login">Login</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <main>
-        {% block main %}{% endblock %}
+        {% block main %}
+            <!-- Main HTML content page -->
+        {% endblock %}
     </main>
     <footer>
         &#x26be &copy 2020 Skyler Novak &#x26be
@@ -57,7 +59,7 @@ Directories created with copies of assets added
 ```Javascript
 {% extends "base.njk" %}
 
-{% block metaStuff %}
+{% block title %}
 <title>About - GSFB</title>
 {% endblock %}
 
@@ -85,5 +87,53 @@ Directories created with copies of assets added
 
 ## (d)
 
-trying to get server working 100%
-pages load, but activities cant find scripts
+```Javascript
+const express = require('express');
+var app = express();
+app.use(express.static('public'));
+const nunjucks = require('nunjucks');
+nunjucks.configure('templates', {
+    autoescape: true,
+    express: app
+});
+
+app.get('/', function (req, res) {
+    res.render('index.njk');
+});
+
+app.get('/about', function(req, res){
+    res.render('About.njk');
+});
+
+app.get('/activities', function(req, res){
+    res.render('Activities.njk');
+});
+
+app.get('/login', function(req, res){
+    res.render('Login.njk');
+});
+
+app.get('/membership', function(req, res){
+    res.render('Membership.njk');
+});
+
+app.get('/teams', function(req, res){
+    res.render('Teams.njk');
+});
+
+let host = '127.9.19.28';
+let port = '4188';
+app.listen(port, host, function () {
+    console.log("clubServer via Templates listening on IPv4: " + host +
+    ":" + port);
+});
+```
+
+## (e)
+
+![screenshot 1](images/scrnsht-1.png)
+
+# Question 2
+
+## (a)
+
