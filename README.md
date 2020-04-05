@@ -137,3 +137,17 @@ app.listen(port, host, function () {
 
 ## (a)
 
+![screenshot 2](images/scrnsht-2.png)
+
+## (b)
+
+![screenshot 3](images/scrnsht-3.png)
+
+## (c)
+
+![screenshot 4](images/scrnsht-4.png)
+
+# Question 3
+
+## (a)
+
