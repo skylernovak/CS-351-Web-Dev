@@ -201,3 +201,8 @@ app.get('/activities', function(req, res){
 
 ## (b)
 
+![screenshot 6](images/scrnsht-6.png)
+
+![screenshot 7](images/scrnsht-7.png)
+
+![screenshot 8](images/scrnsht-8.png)
