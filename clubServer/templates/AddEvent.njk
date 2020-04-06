@@ -1,0 +1,24 @@
+{% extends "base.njk" %}
+
+{% block title %}
+    <title>Add Event - GSFB</title>
+{% endblock %}
+
+{% block pageHeader %}
+    <h1 class="pageHeader">Add GSFB Event</h1>
+{% endblock %}
+
+{% block main %}
+<h1>Add an event to the GSFB league</h1>
+
+<form action="/newEvent" method="POST">
+    <fieldset>
+        <legend>New Event</legend>
+        <section id="newMemberForm">
+            <label for="eventName">Event Name: </label><input type="text" id="eventName" name="eventName" placeholder="Draft Day">
+            <label for="eventDate">Date: </label><input type="text" id="eventDate" name="eventDate" placeholder="Sunday, March 22nd">
+            <button type="submit">Submit</button>
+        </section>
+    </fieldset>
+</form>
+{% endblock %}

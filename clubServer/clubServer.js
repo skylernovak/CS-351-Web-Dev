@@ -43,6 +43,10 @@ app.get('/teams', function(req, res){
     res.render('Teams.njk');
 });
 
+app.get('/addEvent', function(req, res){
+    res.render('AddEvent.njk');
+});
+
 let host = '127.9.19.28';
 let port = '4188';
 app.listen(port, host, function () {
