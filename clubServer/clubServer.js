@@ -13,6 +13,9 @@ let newTeamRegs = [];
 // Bring in club event data file
 const events = require('./eventData.json');
 
+// Express form method POST route handler
+let urlencodedParser = express.urlencoded({extended: true});
+
 app.get('/', function (req, res) {
     res.render('index.njk');
 });
@@ -44,8 +47,14 @@ app.get('/teams', function(req, res){
 });
 
 app.get('/addEvent', function(req, res){
-    res.render('AddEvent.njk');
+    res.render('AddEvent.njk', {events: events});
 });
+
+app.post('/newEvent', express.urlencoded({extended: false}),
+    function(req, res) {
+        events.push({Name: req.body.eventName, Date: req.body.eventDate});
+        res.render('Activities.njk', {events: events});
+    })
 
 let host = '127.9.19.28';
 let port = '4188';
