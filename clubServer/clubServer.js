@@ -14,6 +14,7 @@ let newTeamRegs = [];
 
 // Bring in club event data file
 const events = require('./eventData.json');
+const members = require('./clubUsers.json');
 
 /*
 // Express form method POST route handler
@@ -31,15 +32,10 @@ app.get('/about', function(req, res){
 
 app.get('/activities', function(req, res){
     res.json(events);
-    /*rp(events).then(function (event) {
-        console.log(event);
-    })*/
-    
-    /*let p = rp(events).then(res => {
-        events.forEach(function(event) {
-            console.log(event);
-        })
-    })*/
+});
+
+app.get('/members', function(req, res) {
+    res.json(members);
 });
 
 /*

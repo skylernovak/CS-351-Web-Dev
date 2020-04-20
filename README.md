@@ -68,3 +68,21 @@ rp(options)
         // call failed...
     });
 ```
+
+## (c)
+
+```Javascript
+const members = require('./clubUsers.json');
+app.get('/members', function(req, res) {
+    res.json(members);
+});
+```
+
+## (d)
+
+![screenshot 4](images/scrnsht-4.png)
+
+# Question 3
+
+## (a)
+
