@@ -1,18 +1,21 @@
 const express = require('express');
 var app = express();
 app.use(express.static('public'));
-const nunjucks = require('nunjucks');
+/*const nunjucks = require('nunjucks');
 nunjucks.configure('templates', {
     autoescape: true,
     express: app
-});
+});*/
 
+/*
 // Global variable to hold new team registrations on membership page form submission
 let newTeamRegs = [];
+*/
 
 // Bring in club event data file
 const events = require('./eventData.json');
 
+/*
 // Express form method POST route handler
 let urlencodedParser = express.urlencoded({extended: true});
 
@@ -24,10 +27,22 @@ app.get('/about', function(req, res){
     res.render('About.njk');
 });
 
+*/
+
 app.get('/activities', function(req, res){
-    res.render('Activities.njk', {events: events});
+    res.json(events);
+    /*rp(events).then(function (event) {
+        console.log(event);
+    })*/
+    
+    /*let p = rp(events).then(res => {
+        events.forEach(function(event) {
+            console.log(event);
+        })
+    })*/
 });
 
+/*
 app.get('/login', function(req, res){
     res.render('Login.njk');
 });
@@ -55,6 +70,7 @@ app.post('/newEvent', express.urlencoded({extended: false}),
         events.push({Name: req.body.eventName, Date: req.body.eventDate});
         res.render('Activities.njk', {events: events});
     })
+*/
 
 let host = '127.9.19.28';
 let port = '4188';

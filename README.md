@@ -36,3 +36,35 @@ example of hashed user
 
 ## (a)
 
+![screenshot 2](images/scrnsht-2.png)
+
+```Javascript
+app.get('/activities', function(req, res){
+    res.json(events);
+});
+```
+
+## (b)
+
+![screenshot 3](images/scrnsht-3.png)
+
+```JavaSCRIPT
+const rp = require("request-promise-native");
+const events = require('./eventData.json');
+
+var options = {
+    uri: 'http://127.9.19.28:4188/activities',
+    headers: {
+        'User-Agent': 'Request-Promise'
+    },
+    json: true // Automatically parses the JSON string in the response
+};
+
+rp(options)
+    .then(function (event) {
+        console.log(event);
+    })
+    .catch(function (err) {
+        // call failed...
+    });
+```
