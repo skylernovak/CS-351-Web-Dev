@@ -16,10 +16,10 @@ let newTeamRegs = [];
 const events = require('./eventData.json');
 const members = require('./clubUsers.json');
 
-/*
-// Express form method POST route handler
-let urlencodedParser = express.urlencoded({extended: true});
 
+// Express form method POST route handler
+//let urlencodedParser = express.urlencoded({extended: true});
+/*
 app.get('/', function (req, res) {
     res.render('index.njk');
 });
@@ -31,6 +31,12 @@ app.get('/about', function(req, res){
 */
 
 app.get('/activities', function(req, res){
+    res.json(events);
+});
+
+app.post('/addActivity', express.json(), function(req, res) {
+    console.log(`path /addActivity recieved: ${JSON.stringify(req.body)}`);
+    events.push(req.body);
     res.json(events);
 });
 

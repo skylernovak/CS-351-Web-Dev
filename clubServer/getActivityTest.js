@@ -9,7 +9,6 @@ var options = {
     json: true // Automatically parses the JSON string in the response
 };
 
-let i = 0;
 rp(options)
     .then(function (event) {
         console.log(event);
