@@ -140,4 +140,4 @@ Event data and css style sheet populated in directory
 
 ## (b)
 
-![screenshot 5](images/scrnsht-5/png)
+![screenshot 5](images/scrnsht-5.png)
