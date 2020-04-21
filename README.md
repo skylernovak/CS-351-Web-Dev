@@ -122,3 +122,22 @@ request(options, function(error, res, body) {
 
 ## (a)
 
+Project initilized
+
+## (b)
+
+React debugging extension added to my Opera browser
+
+## (c)
+
+![screenshot 6](images/scrnsht-6.png)
+
+# Question 5
+
+## (a)
+
+Event data and css style sheet populated in directory
+
+## (b)
+
+![screenshot 5](images/scrnsht-5/png)

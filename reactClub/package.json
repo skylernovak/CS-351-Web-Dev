@@ -1,0 +1,15 @@
+{
+  "name": "reactclub",
+  "version": "1.0.0",
+  "description": "react club project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ix9753",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
