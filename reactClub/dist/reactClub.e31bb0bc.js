@@ -28285,7 +28285,53 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"eventData.json":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"activities.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/*import React from 'react';
+import ReactDOM from 'react-dom';
+import events from './eventData.json';
+
+const intro = <h1>GSFB Events</h1>;
+// Take a look at what we imported
+console.log(events);
+// Extremely common pattern mapping array of info to array of JSX
+let rows = events.map(function(e, i){
+  return <tr key={e.Name + i}><td>{e.Name}</td><td>{e.Date}</td></tr>;
+});
+
+let eventTable = <table className="myTable">
+  <thead><tr><th>Name</th><th>Date</th></tr></thead>
+  <tbody>{rows}</tbody>
+</table>;
+
+ReactDOM.render(<section>{intro}{eventTable}</section>,
+  document.getElementById('root'));*/
+function Activities(props) {
+  var tableRows = props.events.map(function (act, i) {
+    return /*#__PURE__*/_react.default.createElement("tr", {
+      key: i
+    }, /*#__PURE__*/_react.default.createElement("td", null, act.Name), /*#__PURE__*/_react.default.createElement("td", null, act.Date));
+  });
+  return /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h1", null, "Club Activities")), /*#__PURE__*/_react.default.createElement("p", null, "Season has been postponed because of COVID-19"), /*#__PURE__*/_react.default.createElement("section", {
+    id: "Schedule"
+  }, /*#__PURE__*/_react.default.createElement("table", null, /*#__PURE__*/_react.default.createElement("thead", null, /*#__PURE__*/_react.default.createElement("tr", null, /*#__PURE__*/_react.default.createElement("td", null, "Event"), /*#__PURE__*/_react.default.createElement("td", null, "Dates"))), /*#__PURE__*/_react.default.createElement("tbody", {
+    id: "EventTable"
+  }, tableRows))));
+}
+
+var _default = Activities;
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"eventData.json":[function(require,module,exports) {
 module.exports = [{
   "Name": "Online Snake Draft",
   "Date": "Sunday, March 22nd"
@@ -28296,34 +28342,7 @@ module.exports = [{
   "Name": "Trade Deadline",
   "Date": "Tuesday, August 25th"
 }];
-},{}],"activities.js":[function(require,module,exports) {
-"use strict";
-
-var _react = _interopRequireDefault(require("react"));
-
-var _reactDom = _interopRequireDefault(require("react-dom"));
-
-var _eventData = _interopRequireDefault(require("./eventData.json"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var intro = /*#__PURE__*/_react.default.createElement("h1", null, "GSFB Events"); // Take a look at what we imported
-
-
-console.log(_eventData.default); // Extremely common pattern mapping array of info to array of JSX
-
-var rows = _eventData.default.map(function (e, i) {
-  return /*#__PURE__*/_react.default.createElement("tr", {
-    key: e.Name + i
-  }, /*#__PURE__*/_react.default.createElement("td", null, e.Name), /*#__PURE__*/_react.default.createElement("td", null, e.Date));
-});
-
-var eventTable = /*#__PURE__*/_react.default.createElement("table", {
-  className: "myTable"
-}, /*#__PURE__*/_react.default.createElement("thead", null, /*#__PURE__*/_react.default.createElement("tr", null, /*#__PURE__*/_react.default.createElement("th", null, "Name"), /*#__PURE__*/_react.default.createElement("th", null, "Date"))), /*#__PURE__*/_react.default.createElement("tbody", null, rows));
-
-_reactDom.default.render( /*#__PURE__*/_react.default.createElement("section", null, intro, eventTable), document.getElementById('root'));
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./eventData.json":"eventData.json"}],"index.js":[function(require,module,exports) {
+},{}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -28338,19 +28357,29 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function Hello(props) {
   // A function component
-  return /*#__PURE__*/_react.default.createElement("h1", null, " Hello React from Skyler Novak (ix9753)! ");
+  return /*#__PURE__*/_react.default.createElement("h1", null, " Hello React from ", props.name, "! ");
 }
+/*
+let events = eventsFile.map(function(clubEvent, i){
+    return <ClubEvent key={clubEvent.Name + i} />
+})
 
-var events = _eventData.default.map(function (clubEvent, i) {
-  return /*#__PURE__*/_react.default.createElement(ClubEvent, {
-    key: clubEvent.Name + i
-  });
-}); // Uses the function component
+// Uses the function component
+ReactDOM.render(
+    <div><Hello/>
+    <Activities events={events}/>
+    </div>,
+    document.getElementById("root")
+);
+*/
+// Uses the function component
 
 
-_reactDom.default.render( /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(Hello, null), /*#__PURE__*/_react.default.createElement(_activities.default, {
-  events: events
-})), document.getElementById("root"));
+_reactDom.default.render( /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(Hello, {
+  name: "Skyler Novak (ix9753)"
+}), /*#__PURE__*/_react.default.createElement(_activities.default, {
+  events: _eventData.default
+})), document.getElementById('root'));
 },{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./activities":"activities.js","./eventData.json":"eventData.json"}],"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -28379,7 +28408,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58850" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60865" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

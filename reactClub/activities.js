@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import ReactDOM from 'react-dom';
 import events from './eventData.json';
 
@@ -16,4 +16,38 @@ let eventTable = <table className="myTable">
 </table>;
 
 ReactDOM.render(<section>{intro}{eventTable}</section>,
-  document.getElementById('root'));
+  document.getElementById('root'));*/
+
+  import React from "react";
+
+  function Activities(props) {
+    let tableRows = props.events.map(function(act, i) {
+      return (
+        <tr key={i}>
+          <td>{act.Name}</td>
+          <td>{act.Date}</td>
+        </tr>
+      );
+    });
+    return (
+      <main>
+        <header>
+          <h1>Club Activities</h1>
+        </header>
+        <p>Season has been postponed because of COVID-19</p>
+        <section id="Schedule">
+          <table>
+            <thead>
+              <tr>
+                <td>Event</td>
+                <td>Dates</td>
+              </tr>
+            </thead>
+            <tbody id="EventTable">{tableRows}</tbody>
+          </table>
+        </section>
+      </main>
+    );
+  }
+
+  export default Activities;  
