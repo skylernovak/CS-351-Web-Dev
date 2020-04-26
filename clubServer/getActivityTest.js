@@ -11,8 +11,11 @@ var options = {
 
 rp(options)
     .then(function (event) {
-        console.log(event);
+        event.forEach(function(activity, i) {
+            console.log(`Activity ${i+1} name ${activity.Name}, date: ${activity.Date}`);
+        });
     })
     .catch(function (err) {
         // call failed...
+        console.log(`Error: ${err}`);
     });

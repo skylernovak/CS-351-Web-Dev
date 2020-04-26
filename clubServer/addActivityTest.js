@@ -1,4 +1,4 @@
-const rp = require("request-promise-native");
+/*const rp = require("request-promise-native");
 const events = require('./eventData.json');
 var request = require('request');
 
@@ -25,4 +25,45 @@ rp(options)
     })
     .catch(function (err) {
         // call failed...
-    });*/
+    });
+*/
+
+/* Testing the POST /actlivities API */
+const rp = require("request-promise-native");
+const verbose = true;
+
+let initialGet = {
+    uri: 'http://127.9.19.28:4188/activities',
+    json: true,
+    method: "GET"
+};
+
+let firstPost = {
+    uri: 'http://127.9.19.28:4188/activities',
+    json: true,
+    method: "POST",
+    body: { Name: "Season Reboot", Date: "Whenever the ball's thrown" }
+};
+
+function printActivities(data) {
+    console.log(`Currently ${data.length} activities`);
+    if (!verbose) {
+        return;
+    }
+    data.forEach(function(activity, i) {
+        console.log(
+            `Activity ${i + 1} name ${activity.Name}, date: ${activity.Date}`
+        );
+    });
+}
+
+async function runTests() {
+    console.log("Initial Get of activities");
+    let res = await rp(initialGet);
+    printActivities(res);
+    res = await rp(firstPost);
+    console.log("After First Good Activity Post")
+    printActivities(res);
+}
+
+runTests();

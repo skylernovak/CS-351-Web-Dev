@@ -11,8 +11,9 @@ var options = {
 
 rp(options)
     .then(function (members) {
-        console.log("Member Interface, there are " + members.length + " members.");
+        console.log(`Member Interface, there are ${members.length} members.`);
     })
     .catch(function (err) {
         // call failed...
+        console.log(`Error: ${err}`);
     });
