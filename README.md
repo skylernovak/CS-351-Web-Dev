@@ -1,9 +1,13 @@
-**Student Name**:  Skyler Novak
+**Student Name**: Skyler Novak
 
 **NetID**: ix9753
 
 # Final Exam
 
-no other content
+Roses are red,
 
-EDIT 1
+Violets are blue.
+
+That's it for Web Dev,
+
+It was fun to learn something new!
