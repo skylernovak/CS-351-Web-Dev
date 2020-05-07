@@ -1,0 +1,19 @@
+{
+  "name": "assignment-skylernovak",
+  "version": "1.0.0",
+  "description": "**Student Name**: Skyler Novak",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CSUEB-DrB-CS/assignment-skylernovak.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CSUEB-DrB-CS/assignment-skylernovak/issues"
+  },
+  "homepage": "https://github.com/CSUEB-DrB-CS/assignment-skylernovak#readme"
+}
