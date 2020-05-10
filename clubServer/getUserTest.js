@@ -1,5 +1,4 @@
 const rp = require("request-promise-native");
-const events = require('./clubUsers.json');
 
 var options = {
     uri: 'http://127.9.19.28:4188/members',
