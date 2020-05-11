@@ -13,7 +13,10 @@ class App extends React.Component {
     }
 
     /* You are allowed to add methods STARTING HERE */
-
+    // couldn't get this to work properly...
+    addLang(lang) {
+        this.setState({applications: this.state.applications.concat(lang)});
+    }
 
     /* END AREA OF ADDED METHODS */
 
@@ -27,7 +30,7 @@ class App extends React.Component {
             <h1> Favorite Programming Languages</h1> 
             <Language 
                 /* CAN ADD CODE HERE */
-
+                addLang={this.addLang.bind(this)}   // couldn't get this to work properly either...
                 />
             <div>
                 <h2>Polling History</h2>
