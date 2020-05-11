@@ -11,6 +11,10 @@ function PlanetsMoons(props) {
     console.log(props);
     let planetsWithMoons = props.planets.filter(hasPlanet);
     console.log(planetsWithMoons.length); // 9
+    planetsWithMoons.sort(function(a, b) {
+        return b.moons.length-a.moons.length;
+    })
+    console.log(planetsWithMoons);
     let planets = planetsWithMoons.map(function(planet, i){
         return <Planets key={"p"+i} planet={planet}/>
     })
