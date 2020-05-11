@@ -28285,7 +28285,129 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"activities.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"images/GSFB-1.jpg":[function(require,module,exports) {
+module.exports = "/GSFB-1.72e9f142.jpg";
+},{}],"Home.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _GSFB = _interopRequireDefault(require("./images/GSFB-1.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function HomeHeader() {
+  var headerSec = /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "pageHeader"
+  }, "Golden State Fantasy Baseball"));
+
+  return /*#__PURE__*/_react.default.createElement("div", null, headerSec);
+} // HomeHeader() component
+
+
+function HomeMain() {
+  var welcomeHeader = /*#__PURE__*/_react.default.createElement("h1", {
+    id: "welcome-to-the-golden-state-fantasy-baseball-homepage"
+  }, "Welcome to the Golden State Fantasy Baseball homepage!");
+
+  var introP = /*#__PURE__*/_react.default.createElement("p", null, "10 team, Head-to-Head points league");
+
+  var firstImg = /*#__PURE__*/_react.default.createElement("img", {
+    src: _GSFB.default
+  });
+
+  return /*#__PURE__*/_react.default.createElement("div", null, welcomeHeader, introP, firstImg);
+} // HomeMain() component
+
+
+function LeagueHistory() {
+  var histHeader = /*#__PURE__*/_react.default.createElement("h2", {
+    id: "league-history-x1f3c6"
+  }, "League History &#x1f3c6");
+
+  var history = /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("p", null, "2019 - Appian Assault, Forest Novak")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("p", null, "2018 - SF Crusaders, Tom Oneto")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("p", null, "2017 - Bixby Kings, Skyler Novak")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("p", null, "2016 - Chico PEDs, Alex Ging")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("p", null, "2015 - Bay Area BALLerz, Cameron Ball")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("p", null, "2014 - Fresno Foul-Ballers, Forest Novak")));
+
+  return /*#__PURE__*/_react.default.createElement("div", null, histHeader, history);
+} // LeagueHistory() component
+
+
+function Home() {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(HomeHeader, null), /*#__PURE__*/_react.default.createElement(HomeMain, null), /*#__PURE__*/_react.default.createElement(LeagueHistory, null));
+} // Home() component
+
+
+var _default = Home;
+/*
+
+    <nav>
+        <div class="dropdown">
+    <span>Menu</span>
+    <div class="dropdown-content">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Activities.html">Activities</a></li>
+            <li><a href="Teams.html">Teams</a></li>
+            <li><a href="Membership.html">Membership</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+    </div>
+</div>
+    </nav>
+    
+    <main>
+        <h1 id="welcome-to-the-golden-state-fantasy-baseball-homepage">Welcome to the Golden State Fantasy Baseball homepage!</h1>
+<p>10 team, Head-to-Head points league</p>
+
+<p><img src="images/GSFB-1.jpg" alt="Core Four Mets Game"></p>
+
+<h2 id="league-history-x1f3c6">League History &amp;#x1f3c6</h2>
+<ul>
+<li><p>2019 - Appian Assault, Forest Novak</p>
+</li>
+<li><p>2018 - SF Crusaders, Tom Oneto</p>
+</li>
+<li><p>2017 - Bixby Kings, Skyler Novak</p>
+</li>
+<li><p>2016 - Chico PEDs, Alex Ging</p>
+</li>
+<li><p>2015 - Bay Area BALLerz, Cameron Ball</p>
+</li>
+<li><p>2014 - Fresno Foul-Ballers, Forest Novak</p>
+</li>
+</ul>
+<div>
+
+<h2 id="news--notes">News &amp; Notes:</h2>
+<ol>
+<li><p><a href="https://www.espn.com/mlb/story/_/id/28852075/yankees-slugger-aaron-judge-stress-fracture-rib">Yanks&#39; Aaron Judge out indefinitely with broken rib, hopes to avoid surgery</a></p>
+</li>
+<li><p><a href="https://www.nytimes.com/2020/02/25/sports/baseball/luis-severino-tommy-john.html">Yankees’ Luis Severino to Miss 2020 Season After Elbow Surgery</a></p>
+</li>
+<li><p><a href="https://www.cbssports.com/fantasy/baseball/news/2020-fantasy-baseball-draft-prep-giancarlo-stantons-latest-injury-could-turn-slugger-into-a-draft-bargain/">Giancarlo Stanton&#39;s latest injury could turn slugger into a draft bargain</a></p>
+</li>
+<li><p><a href="https://www.espn.com/fantasy/baseball/story/_/id/28785811/cockcroft-fantasy-baseball-playbook">Cockcroft&#39;s fantasy baseball playbook</a></p>
+</li>
+<li><p><a href="https://www.fantasypros.com/2020/02/10-breakout-pitchers-for-2020-fantasy-baseball/">10 Breakout Pitchers for 2020</a></p>
+</li>
+</ol>
+</div>
+
+<p>Since 2014</p>
+    </main>
+    <footer>
+        &#x26be &copy 2020 Skyler Novak &#x26be
+    </footer>
+
+*/
+
+exports.default = _default;
+},{"react":"node_modules/react/index.js","./images/GSFB-1.jpg":"images/GSFB-1.jpg"}],"activities.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28349,6 +28471,8 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactDom = _interopRequireDefault(require("react-dom"));
 
+var _Home = _interopRequireDefault(require("./Home"));
+
 var _activities = _interopRequireDefault(require("./activities"));
 
 var _eventData = _interopRequireDefault(require("./eventData.json"));
@@ -28358,29 +28482,21 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function Hello(props) {
   // A function component
   return /*#__PURE__*/_react.default.createElement("h1", null, " Hello React from ", props.name, "! ");
-}
+} // Uses the function component
+
+
+_reactDom.default.render( /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Home.default, null)), document.getElementById('root'));
 /*
-let events = eventsFile.map(function(clubEvent, i){
-    return <ClubEvent key={clubEvent.Name + i} />
-})
-
-// Uses the function component
 ReactDOM.render(
-    <div><Hello/>
-    <Activities events={events}/>
+    <div>
+        <Hello name = "Skyler Novak (ix9753)"/>
+        <Activities events={events} />
     </div>,
-    document.getElementById("root")
+    document.getElementById('root')
 );
+
 */
-// Uses the function component
-
-
-_reactDom.default.render( /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(Hello, {
-  name: "Skyler Novak (ix9753)"
-}), /*#__PURE__*/_react.default.createElement(_activities.default, {
-  events: _eventData.default
-})), document.getElementById('root'));
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./activities":"activities.js","./eventData.json":"eventData.json"}],"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./Home":"Home.js","./activities":"activities.js","./eventData.json":"eventData.json"}],"../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -28408,7 +28524,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60865" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56079" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
