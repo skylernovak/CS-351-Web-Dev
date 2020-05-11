@@ -1,0 +1,35 @@
+/* Question 1 Planets Styling */
+
+body {
+    background-color: darkseagreen;
+}
+
+section {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border: solid green;
+    margin: 0.2em;
+}
+
+main {
+    margin: 2em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    border: solid grey;
+    border-radius: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.NoMoons {
+    height: 6em;
+    overflow: auto;
+}
+

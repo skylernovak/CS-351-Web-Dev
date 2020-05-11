@@ -18,6 +18,7 @@
   "homepage": "https://github.com/CSUEB-DrB-CS/assignment-skylernovak#readme",
   "dependencies": {
     "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "reactdom": "^2.0.0"
   }
 }
